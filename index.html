@@ -3,91 +3,219 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>SAIL – Sales Intelligence</title>
-<meta name="description" content="SAIL – Navigate Industrial Intelligence. AI-powered sales intelligence for industrial suppliers. Coming soon.">
-<style>
-:root{--ink:#fff;--muted:rgba(255,255,255,.72);--accent:#0A84FF;--glass:rgba(255,255,255,.08);--line:rgba(255,255,255,.18)}
-*{box-sizing:border-box}
-html,body{margin:0;min-height:100%}
-body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Helvetica Neue",Arial,sans-serif;color:var(--ink);background:#081536 url(bg.jpg) center/cover fixed no-repeat;-webkit-font-smoothing:antialiased;letter-spacing:-.01em}
-a{color:inherit}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-header{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
-header img{height:38px;width:auto}
-header nav a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;margin-left:22px}
-header nav a:hover{color:#fff}
-.hero{padding:96px 0 72px;text-align:center}
-.hero .tag{display:inline-block;padding:6px 14px;border-radius:999px;background:var(--glass);border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--muted);margin-bottom:22px;backdrop-filter:blur(12px)}
-.hero h1{font-size:clamp(38px,7vw,72px);font-weight:800;letter-spacing:-.03em;line-height:1.05;margin:0 0 18px}
-.hero p{font-size:clamp(16px,2.2vw,20px);color:var(--muted);max-width:640px;margin:0 auto 32px;line-height:1.5}
-.cta{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:14px 26px;border-radius:999px;font-size:16px;box-shadow:0 8px 28px rgba(10,132,255,.4);transition:transform .1s,filter .15s}
-.cta:hover{filter:brightness(1.08)}.cta:active{transform:translateY(1px)}
-.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:24px 0 72px}
-.f{background:var(--glass);border:1px solid var(--line);border-radius:20px;padding:22px;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
-.f b{display:block;font-size:17px;margin-bottom:6px}
-.f p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
-.contact{background:var(--glass);border:1px solid var(--line);border-radius:24px;padding:36px;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);max-width:640px;margin:0 auto 80px}
-.contact h2{margin:0 0 6px;font-size:28px;letter-spacing:-.02em}
-.contact p{margin:0 0 20px;color:var(--muted)}
-.contact label{display:block;font-size:13px;font-weight:600;color:var(--muted);margin:14px 0 6px}
-.contact input,.contact textarea{width:100%;font:inherit;color:#fff;background:rgba(255,255,255,.1);border:1px solid var(--line);border-radius:12px;padding:12px 14px;outline:none}
-.contact input:focus,.contact textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(10,132,255,.3)}
-.contact input::placeholder,.contact textarea::placeholder{color:rgba(255,255,255,.45)}
-.contact button{margin-top:18px;width:100%;border:0;cursor:pointer}
-.note{font-size:13px;color:var(--muted);margin-top:12px;text-align:center}
-.ok{display:none;margin-top:16px;padding:12px 14px;border-radius:12px;background:rgba(48,209,88,.18);border:1px solid rgba(48,209,88,.4)}
-footer{border-top:1px solid var(--line);padding:22px 0 calc(28px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px}
-footer a{text-decoration:none;margin-left:16px}
-@media (max-width:760px){.features{grid-template-columns:1fr}.hero{padding:64px 0 48px}.contact{padding:24px}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important}}
-</style>
+<title data-en="SAIL – Sales Intelligence for industrial suppliers" data-de="SAIL – Sales Intelligence für Industriezulieferer">SAIL – Sales Intelligence for industrial suppliers</title>
+<meta name="description" data-en="SAIL finds the industrial customers worth your time: it enriches companies from public sources, estimates their demand, ranks the best opportunities and prepares your visit – automatically." data-de="SAIL findet die Industriekunden, die Ihre Zeit wert sind: Anreicherung aus öffentlichen Quellen, Bedarfsschätzung, Priorisierung und Besuchsvorbereitung – automatisch." content="SAIL finds the industrial customers worth your time: it enriches companies from public sources, estimates their demand, ranks the best opportunities and prepares your visit – automatically.">
+<link rel="icon" href="logo.png">
+<meta property="og:title" content="SAIL – Sales Intelligence for industrial suppliers">
+<meta property="og:description" content="SAIL finds the industrial customers worth your time: it enriches companies from public sources, estimates their demand, ranks the best opportunities and prepares your visit – automatically.">
+<meta property="og:image" content="https://mysail.ai/app-dashboard.jpg">
+<meta property="og:url" content="https://mysail.ai/index.html">
+<link rel="canonical" href="https://mysail.ai/index.html">
+<link rel="stylesheet" href="site.css">
 </head>
 <body>
-<div class="wrap">
-  <header>
-    <img src="logo-white.png" alt="SAIL – Sales Intelligence">
-    <nav><a href="#contact">Contact</a></nav>
-  </header>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="logo-white.png" alt="SAIL – Sales Intelligence"></a>
+    <nav class="nav"><a href="index.html"><span class="en">Home</span><span class="de">Start</span></a><a href="product.html"><span class="en">Product</span><span class="de">Produkt</span></a><a href="pricing.html"><span class="en">Pricing</span><span class="de">Preise</span></a><a href="about.html"><span class="en">About</span><span class="de">Über uns</span></a><a href="blog.html"><span class="en">Blog</span><span class="de">Blog</span></a><a href="faq.html"><span class="en">FAQ</span><span class="de">FAQ</span></a></nav>
+    <div class="tools">
+      <span class="lang"><button data-lang="en">EN</button><button data-lang="de">DE</button></span>
+      <a class="btn p hide-m" href="contact.html" style="padding:9px 18px;font-size:14px"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a>
+      <button class="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+  <div class="wrap"><nav class="mnav"><a href="index.html"><span class="en">Home</span><span class="de">Start</span></a><a href="product.html"><span class="en">Product</span><span class="de">Produkt</span></a><a href="pricing.html"><span class="en">Pricing</span><span class="de">Preise</span></a><a href="about.html"><span class="en">About</span><span class="de">Über uns</span></a><a href="blog.html"><span class="en">Blog</span><span class="de">Blog</span></a><a href="faq.html"><span class="en">FAQ</span><span class="de">FAQ</span></a><a href="contact.html"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a></nav></div>
+</header>
+<main>
 
-  <section class="hero">
-    <span class="tag">Coming soon</span>
-    <h1>Navigate Industrial Intelligence</h1>
-    <p>SAIL finds the industrial customers worth your time: it enriches companies from public sources, estimates their demand, ranks the best opportunities and prepares your visit – automatically.</p>
-    <a class="cta" href="#contact">Get early access</a>
-  </section>
 
-  <section class="features">
-    <div class="f"><b>Find</b><p>Search a region by city, radius or postcode and let SAIL surface companies with real demand.</p></div>
-    <div class="f"><b>Understand</b><p>Products, processes, buying signals, financial outlook and the estimated demand – gathered for you.</p></div>
-    <div class="f"><b>Act</b><p>A ranked priority list, live news on every account and an AI briefing before each visit.</p></div>
-  </section>
+<section class="hero">
+  <div class="wrap">
+    <span class="eyebrow"><i></i><span class="en">Now in pilot with industrial sales teams</span><span class="de">Jetzt im Pilotbetrieb mit Industrie-Vertriebsteams</span></span>
+    <h1 class="en">Navigate <em>Industrial Intelligence</em></h1>
+    <h1 class="de">Navigate <em>Industrial Intelligence</em></h1>
+    <p class="lead en">SAIL tells your field sales team which companies in their territory need what you sell – and why. Enriched from public data, demand estimated per site, ranked by opportunity, briefed before every visit.</p>
+    <p class="lead de">SAIL zeigt Ihrem Außendienst, welche Unternehmen im Gebiet brauchen, was Sie verkaufen – und warum. Angereichert aus öffentlichen Daten, Bedarf je Standort geschätzt, nach Chance priorisiert, vor jedem Besuch gebrieft.</p>
+    <div class="ctas">
+      <a class="btn p lg" href="contact.html"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a>
+      <a class="btn s lg" href="product.html"><span class="en">See how it works</span><span class="de">So funktioniert es</span></a>
+    </div>
+    <p class="sub en">Works with your existing CRM · GDPR-compliant · Hosted in the EU</p>
+    <p class="sub de">Funktioniert mit Ihrem bestehenden CRM · DSGVO-konform · Hosting in der EU</p>
+    <div class="shot"><img src="app-dashboard.jpg" alt="SAIL dashboard with ranked candidates, pipeline and demand per region" loading="eager"></div>
+  </div>
+</section>
 
-  <section class="contact" id="contact">
-    <h2>Contact us</h2>
-    <p>Drop us a line – we’ll get back to you before launch.</p>
-    <form id="form">
-      <label for="name">Name</label><input id="name" name="name" placeholder="Your name" required>
-      <label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@company.com" required>
-      <label for="msg">Message</label><textarea id="msg" name="message" rows="4" placeholder="What would you like to know?"></textarea>
-      <button class="cta" type="submit">Send message</button>
-      <div class="note">Or write to <a href="mailto:hello@mysail.ai">hello@mysail.ai</a></div>
-      <div class="ok" id="ok">Thanks! Your mail app should open with the message prefilled – just hit send.</div>
-    </form>
-  </section>
+<section class="sec tight">
+  <div class="wrap">
+    <div class="stats">
+      <div class="stat"><b>4</b><span class="en">steps from company name to visit briefing</span><span class="de">Schritte vom Firmennamen zum Besuchsbriefing</span></div>
+      <div class="stat"><b>10+</b><span class="en">public and internal data sources per account</span><span class="de">öffentliche und interne Datenquellen je Kunde</span></div>
+      <div class="stat"><b>6</b><span class="en">transparent score dimensions, no black box</span><span class="de">transparente Score-Dimensionen, keine Black Box</span></div>
+      <div class="stat"><b>&lt; 2 min</b><span class="en">from Excel upload to ranked priority list</span><span class="de">vom Excel-Upload zur fertigen Prioritätsliste</span></div>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <span>© 2026 SAIL · mysail.ai</span>
-    <span><a href="#">Imprint</a><a href="#">Privacy</a></span>
-  </footer>
-</div>
-<script>
-document.getElementById('form').addEventListener('submit',function(e){
-  e.preventDefault();
-  var n=document.getElementById('name').value,m=document.getElementById('email').value,t=document.getElementById('msg').value;
-  var body=encodeURIComponent(t+"\n\n"+n+" · "+m);
-  document.getElementById('ok').style.display='block';
-  window.location.href='mailto:hello@mysail.ai?subject='+encodeURIComponent('SAIL early access – '+n)+'&body='+body;
-});
-</script>
+<section class="sec">
+  <div class="wrap">
+    <div class="center">
+      <div class="kicker"><span class="en">The problem</span><span class="de">Das Problem</span></div>
+      <h2 class="h2 en">Your best salespeople spend most of their week guessing.</h2>
+      <h2 class="h2 de">Ihre besten Vertriebler verbringen die meiste Zeit mit Raten.</h2>
+      <p class="intro en">Industrial territories hold thousands of plants. Which ones are expanding? Which run three shifts on a compressor fleet from 2009? Which just won a tender that needs new capacity? Today that knowledge lives in scattered news, registers and the heads of a few veterans.</p>
+      <p class="intro de">Ein Vertriebsgebiet umfasst tausende Betriebe. Welche expandieren? Welche fahren drei Schichten auf einer Kompressorstation von 2009? Wer hat gerade eine Ausschreibung gewonnen, die neue Kapazität braucht? Dieses Wissen steckt heute verstreut in Nachrichten, Registern und den Köpfen weniger Routiniers.</p>
+    </div>
+    <div class="grid g3" style="margin-top:44px">
+      <div class="card"><div class="ic">🗂️</div><h4 class="en">Cold lists, no context</h4><h4 class="de">Kalte Listen ohne Kontext</h4><p class="en">Bought address lists tell you a company exists – not whether it needs compressed air, how much, or when.</p><p class="de">Gekaufte Adresslisten sagen, dass ein Betrieb existiert – nicht, ob er Druckluft braucht, wie viel und wann.</p></div>
+      <div class="card"><div class="ic">⏱️</div><h4 class="en">Hours of manual research</h4><h4 class="de">Stunden manueller Recherche</h4><p class="en">Website, register, news, LinkedIn, the CRM history – every visit starts with the same 40 minutes of digging.</p><p class="de">Website, Register, News, LinkedIn, CRM-Historie – jeder Besuch beginnt mit denselben 40 Minuten Suche.</p></div>
+      <div class="card"><div class="ic">🎯</div><h4 class="en">Missed signals</h4><h4 class="de">Verpasste Signale</h4><p class="en">The extension permit, the new plant manager, the energy-efficiency subsidy: buying windows close before anyone notices.</p><p class="de">Die Baugenehmigung, der neue Werksleiter, die Effizienzförderung: Kauffenster schließen sich, bevor es jemand bemerkt.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="workflow">
+  <div class="wrap">
+    <div class="center">
+      <div class="kicker"><span class="en">How SAIL works</span><span class="de">So arbeitet SAIL</span></div>
+      <h2 class="h2 en">One automated workflow. Four steps. Zero spreadsheets.</h2>
+      <h2 class="h2 de">Ein automatischer Workflow. Vier Schritte. Keine Tabellen.</h2>
+      <p class="intro en">Add a company – by name, by Excel import or by searching a city and radius – and SAIL runs the whole chain on its own.</p>
+      <p class="intro de">Fügen Sie ein Unternehmen hinzu – per Name, Excel-Import oder Gebietssuche mit Stadt und Radius – und SAIL durchläuft die gesamte Kette automatisch.</p>
+    </div>
+    <div class="steps" style="margin-top:44px">
+      <div class="step"><span class="n">1</span><h4 class="en">Capture</h4><h4 class="de">Erfassen</h4><p class="en">Type a name, drop an Excel list or search a territory by city + radius or postcode. Duplicates are merged automatically.</p><p class="de">Name eintippen, Excel-Liste ablegen oder Gebiet per Stadt + Radius bzw. PLZ durchsuchen. Dubletten werden automatisch zusammengeführt.</p></div>
+      <div class="step"><span class="n">2</span><h4 class="en">Enrich</h4><h4 class="de">Anreichern</h4><p class="en">Website, company registers, news, tenders, financial outlook, decision makers and your own installed-base data – gathered and cited.</p><p class="de">Website, Handelsregister, Nachrichten, Ausschreibungen, Wirtschaftsprognose, Entscheider und Ihre eigenen Bestandsdaten – gesammelt und mit Quelle.</p></div>
+      <div class="step"><span class="n">3</span><h4 class="en">Estimate demand</h4><h4 class="de">Bedarf ermitteln</h4><p class="en">Industry, products, vertical integration, headcount and shifts become an estimated demand with a transparent formula you can adjust.</p><p class="de">Branche, Produkte, Fertigungstiefe, Mitarbeiter und Schichten werden zu einer Bedarfsschätzung mit nachvollziehbarer, anpassbarer Formel.</p></div>
+      <div class="step"><span class="n">4</span><h4 class="en">Prioritise &amp; act</h4><h4 class="de">Priorisieren &amp; handeln</h4><p class="en">A 0–100 score ranks every account. Live news, travel time from where you are and an AI briefing get you ready for the visit.</p><p class="de">Ein Score von 0–100 ordnet jeden Kunden ein. Live-Nachrichten, Fahrzeit vom aktuellen Standort und ein KI-Briefing bereiten den Besuch vor.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap split">
+    <div class="shot sm"><img src="app-kunde.jpg" alt="Account record with score breakdown and demand estimate" loading="lazy"></div>
+    <div class="txt">
+      <div class="kicker"><span class="en">Explainable by design</span><span class="de">Nachvollziehbar by design</span></div>
+      <h2 class="h2 en">Every score comes with its reasoning.</h2>
+      <h2 class="h2 de">Jeder Score kommt mit seiner Begründung.</h2>
+      <p class="intro en">SAIL never says “trust me”. The priority score is built from six weighted dimensions, and each one shows the facts behind it – so a sales rep can challenge, correct and learn.</p>
+      <p class="intro de">SAIL sagt nie „vertrau mir“. Der Score setzt sich aus sechs gewichteten Dimensionen zusammen, und jede zeigt die Fakten dahinter – damit Vertriebler hinterfragen, korrigieren und lernen können.</p>
+      <ul>
+        <li><span class="en">Demand (30) · Buying signals (25) · Installed base (20)</span><span class="de">Bedarf (30) · Kaufsignale (25) · Bestandssituation (20)</span></li>
+        <li><span class="en">Financial outlook (10) · Reachability (8) · Data quality (7)</span><span class="de">Wirtschaftlichkeit (10) · Erreichbarkeit (8) · Datenqualität (7)</span></li>
+        <li><span class="en">Classes A / B / C with clear thresholds – A means “call this week”</span><span class="de">Klassen A / B / C mit klaren Schwellen – A heißt „diese Woche anrufen“</span></li>
+        <li><span class="en">Assumptions editable per account and per industry</span><span class="de">Annahmen je Kunde und je Branche anpassbar</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap split rev">
+    <div class="shot sm"><img src="app-nachrichten.jpg" alt="Live news feed linked to accounts" loading="lazy"></div>
+    <div class="txt">
+      <div class="kicker"><span class="en">Always current</span><span class="de">Immer aktuell</span></div>
+      <h2 class="h2 en">News that becomes a sales signal – not noise.</h2>
+      <h2 class="h2 de">Nachrichten, die zum Verkaufssignal werden – statt Rauschen.</h2>
+      <p class="intro en">SAIL watches press, registers and tender portals for every account in your territory. A new plant, a hired energy manager or a sustainability report lands as a notification, is linked to the account and can be taken over into the score with one click.</p>
+      <p class="intro de">SAIL beobachtet Presse, Register und Ausschreibungsportale für jeden Kunden im Gebiet. Ein neues Werk, ein eingestellter Energiemanager oder ein Nachhaltigkeitsbericht kommt als Benachrichtigung, ist dem Kunden zugeordnet und wandert per Klick in den Score.</p>
+      <ul>
+        <li><span class="en">Notifications in the app – read, mark, act</span><span class="de">Benachrichtigungen in der App – lesen, markieren, handeln</span></li>
+        <li><span class="en">Each item visible in the account record with its source</span><span class="de">Jede Meldung in der Kundenakte, mit Quelle</span></li>
+        <li><span class="en">Economic outlook per company: growth, credit class, 3-year forecast</span><span class="de">Wirtschaftliche Prognose je Unternehmen: Wachstum, Bonität, 3-Jahres-Ausblick</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap split">
+    <div class="shot phone"><img src="app-go.jpg" alt="SAIL Go – the mobile mode for the road" loading="lazy"></div>
+    <div class="txt">
+      <div class="kicker"><span class="en">SAIL Go</span><span class="de">SAIL Go</span></div>
+      <h2 class="h2 en">Desktop for planning. One tap for the road.</h2>
+      <h2 class="h2 de">Desktop zum Planen. Ein Tipp für unterwegs.</h2>
+      <p class="intro en">Switch to the Go mode and SAIL becomes a focused mobile app: today's priorities, the account at a glance, phone / e-mail / LinkedIn of the right contact, route in Google Maps. Same data, same workflow – one tap away.</p>
+      <p class="intro de">Mit dem Umschalter wird SAIL zur fokussierten mobilen App: die Prioritäten von heute, der Kunde auf einen Blick, Telefon / E-Mail / LinkedIn des richtigen Ansprechpartners, Route in Google Maps. Gleiche Daten, gleicher Workflow – einen Tipp entfernt.</p>
+      <ul>
+        <li><span class="en">Sort by score, demand or travel time; filter by postcode, city + radius, industry</span><span class="de">Sortieren nach Score, Bedarf oder Fahrzeit; Filter nach PLZ, Stadt + Radius, Branche</span></li>
+        <li><span class="en">Add a new company on site – the workflow runs in the background</span><span class="de">Neuen Betrieb vor Ort anlegen – der Workflow läuft im Hintergrund</span></li>
+        <li><span class="en">Suggestions from the territory you define</span><span class="de">Vorschläge aus dem Gebiet, das Sie festlegen</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="center">
+      <div class="kicker"><span class="en">Example: compressed air</span><span class="de">Beispiel: Druckluft</span></div>
+      <h2 class="h2 en">Built for capital goods with a demand you can model.</h2>
+      <h2 class="h2 de">Gebaut für Investitionsgüter mit modellierbarem Bedarf.</h2>
+      <p class="intro en">Our first deployment is compressed air. A plant's demand follows from its industry, production share, shifts and vertical integration – which is exactly what SAIL extracts. The same engine applies to pumps, drives, filtration, industrial gases or any product where demand scales with what a plant makes.</p>
+      <p class="intro de">Unser erster Einsatz ist Druckluft. Der Bedarf eines Werks folgt aus Branche, Produktionsanteil, Schichten und Fertigungstiefe – genau das extrahiert SAIL. Dieselbe Engine passt für Pumpen, Antriebe, Filtration, Industriegase oder jedes Produkt, dessen Bedarf mit der Fertigung skaliert.</p>
+    </div>
+    <div class="grid g4" style="margin-top:40px">
+      <div class="card solid"><h4 class="en">Demand in m³/min</h4><h4 class="de">Bedarf in m³/min</h4><p class="en">Average, peak and installation demand per site, incl. leakage and reserve.</p><p class="de">Mittel-, Spitzen- und Installationsbedarf je Standort, inkl. Leckage und Reserve.</p></div>
+      <div class="card solid"><h4 class="en">Energy &amp; budget</h4><h4 class="de">Energie &amp; Budget</h4><p class="en">Power, annual energy cost and investment benchmark – a conversation starter in numbers.</p><p class="de">Leistung, jährliche Energiekosten und Invest-Richtwert – ein Gesprächseinstieg in Zahlen.</p></div>
+      <div class="card solid"><h4 class="en">Installed base</h4><h4 class="de">Bestandssituation</h4><p class="en">Own customer, competitor fleet and its age – from your CRM or from signals.</p><p class="de">Eigener Kunde, Wettbewerbsanlage und deren Alter – aus Ihrem CRM oder aus Signalen.</p></div>
+      <div class="card solid"><h4 class="en">Product fit</h4><h4 class="de">Produktpassung</h4><p class="en">Optional: map the demand to your own product series for a first recommendation.</p><p class="de">Optional: Bedarf auf Ihre eigene Produktreihe abbilden – für eine erste Empfehlung.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="callout">
+      <div>
+        <h2 class="h2 en">See SAIL on your own territory.</h2>
+        <h2 class="h2 de">Sehen Sie SAIL auf Ihrem eigenen Gebiet.</h2>
+        <p class="en">Send us a region and a product – we'll run the workflow on real companies and walk you through the results in 30 minutes.</p>
+        <p class="de">Nennen Sie uns eine Region und ein Produkt – wir lassen den Workflow auf echten Unternehmen laufen und gehen die Ergebnisse in 30 Minuten mit Ihnen durch.</p>
+      </div>
+      <div class="act">
+        <a class="btn w lg" href="contact.html"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a>
+        <a class="btn s lg" href="pricing.html"><span class="en">See pricing</span><span class="de">Preise ansehen</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <img src="logo-white.png" alt="SAIL">
+        <p class="en">AI-powered sales intelligence for industrial suppliers. Find the customers worth your time – before your competitors do.</p>
+        <p class="de">KI-gestützte Sales Intelligence für Industriezulieferer. Finden Sie die Kunden, die Ihre Zeit wert sind – bevor es der Wettbewerb tut.</p>
+      </div>
+      <div>
+        <h5 class="en">Product</h5><h5 class="de">Produkt</h5>
+        <a href="product.html"><span class="en">Features</span><span class="de">Funktionen</span></a>
+        <a href="product.html#workflow"><span class="en">How it works</span><span class="de">So funktioniert es</span></a>
+        <a href="pricing.html"><span class="en">Pricing</span><span class="de">Preise</span></a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div>
+        <h5 class="en">Company</h5><h5 class="de">Unternehmen</h5>
+        <a href="about.html"><span class="en">About us</span><span class="de">Über uns</span></a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html"><span class="en">Contact</span><span class="de">Kontakt</span></a>
+      </div>
+      <div>
+        <h5 class="en">Legal</h5><h5 class="de">Rechtliches</h5>
+        <a href="imprint.html"><span class="en">Imprint</span><span class="de">Impressum</span></a>
+        <a href="privacy.html"><span class="en">Privacy</span><span class="de">Datenschutz</span></a>
+      </div>
+    </div>
+    <div class="fbar">
+      <span>© 2026 SAIL · mysail.ai</span>
+      <span><span class="en">Made in Germany · Navigate Industrial Intelligence</span><span class="de">Made in Germany · Navigate Industrial Intelligence</span></span>
+    </div>
+  </div>
+</footer>
+<script src="site.js"></script>
 </body>
 </html>

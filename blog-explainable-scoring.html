@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title data-en="Why a sales score has to be explainable – SAIL Blog" data-de="Warum ein Vertriebs-Score erklärbar sein muss – SAIL Blog">Why a sales score has to be explainable – SAIL Blog</title>
+<meta name="description" data-en="Black-box lead scores get ignored by experienced reps. How SAIL weights six dimensions and why it shows the maths." data-de="Black-Box-Lead-Scores werden von erfahrenen Vertrieblern ignoriert. Wie SAIL sechs Dimensionen gewichtet und warum es die Rechnung zeigt." content="Black-box lead scores get ignored by experienced reps. How SAIL weights six dimensions and why it shows the maths.">
+<link rel="icon" href="logo.png">
+<meta property="og:title" content="Why a sales score has to be explainable – SAIL Blog">
+<meta property="og:description" content="Black-box lead scores get ignored by experienced reps. How SAIL weights six dimensions and why it shows the maths.">
+<meta property="og:image" content="https://mysail.ai/app-dashboard.jpg">
+<meta property="og:url" content="https://mysail.ai/blog-explainable-scoring.html">
+<link rel="canonical" href="https://mysail.ai/blog-explainable-scoring.html">
+<link rel="stylesheet" href="site.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="logo-white.png" alt="SAIL – Sales Intelligence"></a>
+    <nav class="nav"><a href="index.html"><span class="en">Home</span><span class="de">Start</span></a><a href="product.html"><span class="en">Product</span><span class="de">Produkt</span></a><a href="pricing.html"><span class="en">Pricing</span><span class="de">Preise</span></a><a href="about.html"><span class="en">About</span><span class="de">Über uns</span></a><a href="blog.html"><span class="en">Blog</span><span class="de">Blog</span></a><a href="faq.html"><span class="en">FAQ</span><span class="de">FAQ</span></a></nav>
+    <div class="tools">
+      <span class="lang"><button data-lang="en">EN</button><button data-lang="de">DE</button></span>
+      <a class="btn p hide-m" href="contact.html" style="padding:9px 18px;font-size:14px"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a>
+      <button class="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+  <div class="wrap"><nav class="mnav"><a href="index.html"><span class="en">Home</span><span class="de">Start</span></a><a href="product.html"><span class="en">Product</span><span class="de">Produkt</span></a><a href="pricing.html"><span class="en">Pricing</span><span class="de">Preise</span></a><a href="about.html"><span class="en">About</span><span class="de">Über uns</span></a><a href="blog.html"><span class="en">Blog</span><span class="de">Blog</span></a><a href="faq.html"><span class="en">FAQ</span><span class="de">FAQ</span></a><a href="contact.html"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a></nav></div>
+</header>
+<main>
+
+
+<section class="sec">
+  <div class="wrap article">
+    <div class="meta">2026-08-05 · <span class="en">6 min read · Product</span><span class="de">6 Min. Lesezeit · Produkt</span></div>
+
+    <div class="en">
+      <h1>Why a sales score has to be explainable</h1>
+      <p>Every CRM has a lead score. Almost no field sales rep uses it. Ask why and you get the same answer: “I don't know what it means, and when it's wrong I can't fix it.” A score that an experienced rep cannot argue with is a score that will be ignored. So we designed SAIL's score to be argued with.</p>
+
+      <h2>Six dimensions, fixed weights</h2>
+      <table>
+        <thead><tr><th>Dimension</th><th>Weight</th><th>What it measures</th></tr></thead>
+        <tbody>
+          <tr><td>Demand</td><td>30</td><td>Estimated installation demand relative to the territory</td></tr>
+          <tr><td>Buying signals</td><td>25</td><td>Recent, weighted events that precede a purchase</td></tr>
+          <tr><td>Installed base</td><td>20</td><td>Competitor fleet, its age, your own installed base</td></tr>
+          <tr><td>Financial outlook</td><td>10</td><td>Growth forecast and credit class</td></tr>
+          <tr><td>Reachability</td><td>8</td><td>Travel time from your location, known contact</td></tr>
+          <tr><td>Data quality</td><td>7</td><td>Number of sources and confidence of the facts</td></tr>
+        </tbody>
+      </table>
+      <p>The score is the sum, 0–100. Class A starts at 70 (“call this week”), B at 45 (“qualify”), C below (“observe”). The weights are defaults; a company selling pumps instead of compressors, or selling service rather than new equipment, changes them – and the whole territory re-ranks.</p>
+
+      <h2>Every point has a reason</h2>
+      <p>Open any account and the score breakdown shows each dimension as a bar with its points and, underneath, the facts that produced them: “12.9 m³/min installation demand”, “won project, new building / extension”, “competitor fleet 2013 (13 years)”, “credit class A, revenue forecast +7.2 % p.a.”, “62 min drive from Freiburg, contact known”, “4 sources, confidence 90 %”. Each fact links to its source.</p>
+      <div class="box"><p>Design rule: if a number cannot be explained in one sentence to a customer, it does not go into the score.</p></div>
+
+      <h2>Why data quality is a dimension, not a filter</h2>
+      <p>Most tools hide uncertainty. We score it. A company with three contradictory sources and a guessed headcount gets fewer data-quality points – which pushes it down the list but keeps it visible, so a rep can decide whether a phone call would resolve the uncertainty. Low confidence is information, not noise.</p>
+
+      <h2>What this changes in the field</h2>
+      <p>Three things we saw in pilots. First, adoption: reps start by checking the top three accounts against what they know, find the reasoning sound (or correct it), and then trust the rest of the list. Second, conversation quality: the breakdown becomes the opening of the visit – “we estimate around 20 m³/min, your fleet is from 2013, and you just announced a new hall”. Third, learning: when a visit shows an estimate was off, the correction stays, lowers the weight of the wrong source and improves the next enrichment.</p>
+
+      <h2>The AI's place</h2>
+      <p>Language models do the reading: websites, registers, news, tenders. They do not decide the score. The score is arithmetic on facts the model extracted and a human can see. That separation is what makes SAIL auditable – and what keeps the rep in charge.</p>
+    </div>
+
+    <div class="de">
+      <h1>Warum ein Vertriebs-Score erklärbar sein muss</h1>
+      <p>Jedes CRM hat einen Lead-Score. Fast kein Außendienstler nutzt ihn. Fragt man nach, kommt immer dieselbe Antwort: „Ich weiß nicht, was er bedeutet, und wenn er falsch ist, kann ich ihn nicht korrigieren.“ Ein Score, mit dem ein erfahrener Vertriebler nicht streiten kann, wird ignoriert. Also haben wir SAILs Score so gebaut, dass man mit ihm streiten kann.</p>
+
+      <h2>Sechs Dimensionen, feste Gewichte</h2>
+      <table>
+        <thead><tr><th>Dimension</th><th>Gewicht</th><th>Was gemessen wird</th></tr></thead>
+        <tbody>
+          <tr><td>Bedarf</td><td>30</td><td>Geschätzter Installationsbedarf relativ zum Gebiet</td></tr>
+          <tr><td>Kaufsignale</td><td>25</td><td>Aktuelle, gewichtete Ereignisse, die einem Kauf vorausgehen</td></tr>
+          <tr><td>Bestandssituation</td><td>20</td><td>Wettbewerbsanlage, deren Alter, eigener Bestand</td></tr>
+          <tr><td>Wirtschaftlichkeit</td><td>10</td><td>Wachstumsprognose und Bonität</td></tr>
+          <tr><td>Erreichbarkeit</td><td>8</td><td>Fahrzeit vom Standort, bekannter Ansprechpartner</td></tr>
+          <tr><td>Datenqualität</td><td>7</td><td>Anzahl der Quellen und Konfidenz der Fakten</td></tr>
+        </tbody>
+      </table>
+      <p>Der Score ist die Summe, 0–100. Klasse A beginnt bei 70 („diese Woche anrufen“), B bei 45 („qualifizieren“), C darunter („beobachten“). Die Gewichte sind Standardwerte; wer Pumpen statt Kompressoren oder Service statt Neuanlagen verkauft, ändert sie – und das ganze Gebiet wird neu sortiert.</p>
+
+      <h2>Jeder Punkt hat einen Grund</h2>
+      <p>Öffnet man einen Kunden, zeigt die Score-Herleitung jede Dimension als Balken mit Punkten und darunter die Fakten, aus denen sie entstanden: „12,9 m³/min Installationsbedarf“, „Gewonnenes Projekt, Neubau / Erweiterung“, „Wettbewerber 2013 (13 J.)“, „Bonität A, Umsatzprognose +7,2 % p. a.“, „62 min Anfahrt von Freiburg, Ansprechpartner bekannt“, „4 Quellen, Konfidenz 90 %“. Jeder Fakt verlinkt auf seine Quelle.</p>
+      <div class="box"><p>Designregel: Wenn eine Zahl einem Kunden nicht in einem Satz erklärt werden kann, kommt sie nicht in den Score.</p></div>
+
+      <h2>Warum Datenqualität eine Dimension ist, kein Filter</h2>
+      <p>Die meisten Tools verstecken Unsicherheit. Wir bewerten sie. Ein Unternehmen mit drei widersprüchlichen Quellen und geschätzter Mitarbeiterzahl bekommt weniger Datenqualitäts-Punkte – das schiebt es in der Liste nach unten, hält es aber sichtbar, damit ein Vertriebler entscheiden kann, ob ein Anruf die Unsicherheit auflöst. Geringe Konfidenz ist Information, kein Rauschen.</p>
+
+      <h2>Was sich im Feld ändert</h2>
+      <p>Drei Beobachtungen aus Piloten. Erstens Akzeptanz: Vertriebler prüfen zuerst die Top-3 gegen das, was sie wissen, finden die Herleitung plausibel (oder korrigieren sie) – und vertrauen dann dem Rest der Liste. Zweitens Gesprächsqualität: Die Herleitung wird zum Einstieg des Besuchs – „wir schätzen rund 20 m³/min, Ihre Anlage ist von 2013, und Sie haben gerade eine neue Halle angekündigt“. Drittens Lernen: Zeigt ein Besuch, dass eine Schätzung danebenlag, bleibt die Korrektur, senkt das Gewicht der falschen Quelle und verbessert die nächste Anreicherung.</p>
+
+      <h2>Der Platz der KI</h2>
+      <p>Sprachmodelle übernehmen das Lesen: Websites, Register, Nachrichten, Ausschreibungen. Sie entscheiden nicht über den Score. Der Score ist Arithmetik auf Fakten, die das Modell extrahiert hat und die ein Mensch sehen kann. Diese Trennung macht SAIL prüfbar – und lässt den Vertriebler am Steuer.</p>
+    </div>
+
+    <p style="margin-top:36px"><a class="btn s" href="blog.html">← Blog</a> &nbsp; <a class="btn p" href="contact.html"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a></p>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <img src="logo-white.png" alt="SAIL">
+        <p class="en">AI-powered sales intelligence for industrial suppliers. Find the customers worth your time – before your competitors do.</p>
+        <p class="de">KI-gestützte Sales Intelligence für Industriezulieferer. Finden Sie die Kunden, die Ihre Zeit wert sind – bevor es der Wettbewerb tut.</p>
+      </div>
+      <div>
+        <h5 class="en">Product</h5><h5 class="de">Produkt</h5>
+        <a href="product.html"><span class="en">Features</span><span class="de">Funktionen</span></a>
+        <a href="product.html#workflow"><span class="en">How it works</span><span class="de">So funktioniert es</span></a>
+        <a href="pricing.html"><span class="en">Pricing</span><span class="de">Preise</span></a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div>
+        <h5 class="en">Company</h5><h5 class="de">Unternehmen</h5>
+        <a href="about.html"><span class="en">About us</span><span class="de">Über uns</span></a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html"><span class="en">Contact</span><span class="de">Kontakt</span></a>
+      </div>
+      <div>
+        <h5 class="en">Legal</h5><h5 class="de">Rechtliches</h5>
+        <a href="imprint.html"><span class="en">Imprint</span><span class="de">Impressum</span></a>
+        <a href="privacy.html"><span class="en">Privacy</span><span class="de">Datenschutz</span></a>
+      </div>
+    </div>
+    <div class="fbar">
+      <span>© 2026 SAIL · mysail.ai</span>
+      <span><span class="en">Made in Germany · Navigate Industrial Intelligence</span><span class="de">Made in Germany · Navigate Industrial Intelligence</span></span>
+    </div>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
