@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>SAIL – Sales Intelligence</title>
+<meta name="description" content="SAIL – Navigate Industrial Intelligence. AI-powered sales intelligence for industrial suppliers. Coming soon.">
+<style>
+:root{--ink:#fff;--muted:rgba(255,255,255,.72);--accent:#0A84FF;--glass:rgba(255,255,255,.08);--line:rgba(255,255,255,.18)}
+*{box-sizing:border-box}
+html,body{margin:0;min-height:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Helvetica Neue",Arial,sans-serif;color:var(--ink);background:#081536 url(bg.jpg) center/cover fixed no-repeat;-webkit-font-smoothing:antialiased;letter-spacing:-.01em}
+a{color:inherit}
+.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+header{display:flex;align-items:center;justify-content:space-between;padding:22px 0}
+header img{height:38px;width:auto}
+header nav a{text-decoration:none;color:var(--muted);font-size:14px;font-weight:500;margin-left:22px}
+header nav a:hover{color:#fff}
+.hero{padding:96px 0 72px;text-align:center}
+.hero .tag{display:inline-block;padding:6px 14px;border-radius:999px;background:var(--glass);border:1px solid var(--line);font-size:13px;font-weight:600;color:var(--muted);margin-bottom:22px;backdrop-filter:blur(12px)}
+.hero h1{font-size:clamp(38px,7vw,72px);font-weight:800;letter-spacing:-.03em;line-height:1.05;margin:0 0 18px}
+.hero p{font-size:clamp(16px,2.2vw,20px);color:var(--muted);max-width:640px;margin:0 auto 32px;line-height:1.5}
+.cta{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600;padding:14px 26px;border-radius:999px;font-size:16px;box-shadow:0 8px 28px rgba(10,132,255,.4);transition:transform .1s,filter .15s}
+.cta:hover{filter:brightness(1.08)}.cta:active{transform:translateY(1px)}
+.features{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:24px 0 72px}
+.f{background:var(--glass);border:1px solid var(--line);border-radius:20px;padding:22px;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.f b{display:block;font-size:17px;margin-bottom:6px}
+.f p{margin:0;color:var(--muted);font-size:15px;line-height:1.5}
+.contact{background:var(--glass);border:1px solid var(--line);border-radius:24px;padding:36px;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);max-width:640px;margin:0 auto 80px}
+.contact h2{margin:0 0 6px;font-size:28px;letter-spacing:-.02em}
+.contact p{margin:0 0 20px;color:var(--muted)}
+.contact label{display:block;font-size:13px;font-weight:600;color:var(--muted);margin:14px 0 6px}
+.contact input,.contact textarea{width:100%;font:inherit;color:#fff;background:rgba(255,255,255,.1);border:1px solid var(--line);border-radius:12px;padding:12px 14px;outline:none}
+.contact input:focus,.contact textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(10,132,255,.3)}
+.contact input::placeholder,.contact textarea::placeholder{color:rgba(255,255,255,.45)}
+.contact button{margin-top:18px;width:100%;border:0;cursor:pointer}
+.note{font-size:13px;color:var(--muted);margin-top:12px;text-align:center}
+.ok{display:none;margin-top:16px;padding:12px 14px;border-radius:12px;background:rgba(48,209,88,.18);border:1px solid rgba(48,209,88,.4)}
+footer{border-top:1px solid var(--line);padding:22px 0 calc(28px + env(safe-area-inset-bottom,0px));display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;color:var(--muted);font-size:13px}
+footer a{text-decoration:none;margin-left:16px}
+@media (max-width:760px){.features{grid-template-columns:1fr}.hero{padding:64px 0 48px}.contact{padding:24px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="logo-white.png" alt="SAIL – Sales Intelligence">
+    <nav><a href="#contact">Contact</a></nav>
+  </header>
+
+  <section class="hero">
+    <span class="tag">Coming soon</span>
+    <h1>Navigate Industrial Intelligence</h1>
+    <p>SAIL finds the industrial customers worth your time: it enriches companies from public sources, estimates their demand, ranks the best opportunities and prepares your visit – automatically.</p>
+    <a class="cta" href="#contact">Get early access</a>
+  </section>
+
+  <section class="features">
+    <div class="f"><b>Find</b><p>Search a region by city, radius or postcode and let SAIL surface companies with real demand.</p></div>
+    <div class="f"><b>Understand</b><p>Products, processes, buying signals, financial outlook and the estimated demand – gathered for you.</p></div>
+    <div class="f"><b>Act</b><p>A ranked priority list, live news on every account and an AI briefing before each visit.</p></div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact us</h2>
+    <p>Drop us a line – we’ll get back to you before launch.</p>
+    <form id="form">
+      <label for="name">Name</label><input id="name" name="name" placeholder="Your name" required>
+      <label for="email">Email</label><input id="email" name="email" type="email" placeholder="you@company.com" required>
+      <label for="msg">Message</label><textarea id="msg" name="message" rows="4" placeholder="What would you like to know?"></textarea>
+      <button class="cta" type="submit">Send message</button>
+      <div class="note">Or write to <a href="mailto:hello@mysail.ai">hello@mysail.ai</a></div>
+      <div class="ok" id="ok">Thanks! Your mail app should open with the message prefilled – just hit send.</div>
+    </form>
+  </section>
+
+  <footer>
+    <span>© 2026 SAIL · mysail.ai</span>
+    <span><a href="#">Imprint</a><a href="#">Privacy</a></span>
+  </footer>
+</div>
+<script>
+document.getElementById('form').addEventListener('submit',function(e){
+  e.preventDefault();
+  var n=document.getElementById('name').value,m=document.getElementById('email').value,t=document.getElementById('msg').value;
+  var body=encodeURIComponent(t+"\n\n"+n+" · "+m);
+  document.getElementById('ok').style.display='block';
+  window.location.href='mailto:hello@mysail.ai?subject='+encodeURIComponent('SAIL early access – '+n)+'&body='+body;
+});
+</script>
+</body>
+</html>
