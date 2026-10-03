@@ -11,7 +11,7 @@
 <meta property="og:image" content="https://mysail.ai/app-dashboard.jpg">
 <meta property="og:url" content="https://mysail.ai/index.html">
 <link rel="canonical" href="https://mysail.ai/index.html">
-<link rel="stylesheet" href="site.css?v=88739ded">
+<link rel="stylesheet" href="site.css?v=c19c4a68">
 </head>
 <body>
 <header class="top">
@@ -92,6 +92,167 @@
   </div>
 </section>
 
+
+<section class="sec" id="modell">
+  <div class="wrap">
+    <div class="center">
+      <div class="kicker"><span class="en">Inside the model</span><span class="de">Blick ins Modell</span></div>
+      <h2 class="h2 en">From public features to demand – calibrated to you.</h2>
+      <h2 class="h2 de">Von öffentlichen Merkmalen zum Bedarf – auf Sie kalibriert.</h2>
+      <p class="intro en">Our proprietary inference model turns the features gathered during enrichment into average, peak and installation demand. Its weights are calibrated per customer on installed base, service history and verified sites – and every correction from the field flows back in.</p>
+      <p class="intro de">Unser eigenentwickeltes Inferenzmodell übersetzt die bei der Anreicherung gesammelten Merkmale in Mittel-, Spitzen- und Installationsbedarf. Seine Gewichte werden je Kunde auf Bestandsanlagen, Servicehistorie und verifizierten Standorten kalibriert – und jede Korrektur aus dem Feld fließt zurück.</p>
+    </div>
+    <div style="margin-top:36px"><figure class="figure"><svg class="diagram" viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SAIL inference model" font-family="-apple-system,BlinkMacSystemFont,Inter,Helvetica Neue,Arial,sans-serif">
+<defs>
+  <linearGradient id="gacc-1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5AC8FA"/><stop offset="1" stop-color="#0A84FF"/></linearGradient>
+  <linearGradient id="gmod-1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(10,132,255,.28)"/><stop offset="1" stop-color="rgba(191,90,242,.18)"/></linearGradient>
+  <marker id="arr-1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5AC8FA"/></marker>
+  <marker id="arr2-1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#30D158"/></marker>
+  <filter id="glow-1" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="10" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+</defs>
+<text class="en" x="20" y="34" text-anchor="start" font-size="12" font-weight="700" fill="#5AC8FA" fill-opacity="1">Features from enrichment</text><text class="de" x="20" y="34" text-anchor="start" font-size="12" font-weight="700" fill="#5AC8FA" fill-opacity="1">Merkmale aus der Anreicherung</text>
+<rect x="20" y="60" width="280" height="46" rx="12" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<circle cx="44" cy="83" r="5" fill="url(#gacc-1)"/>
+<text class="en" x="60" y="88" text-anchor="start" font-size="13.5" font-weight="600" fill="#fff" fill-opacity="1">Industry & process profile</text><text class="de" x="60" y="88" text-anchor="start" font-size="13.5" font-weight="600" fill="#fff" fill-opacity="1">Branche & Prozessprofil</text>
+<path d="M300 83 C 340 83, 340 200, 380 200" fill="none" stroke="rgba(90,200,250,.55)" stroke-width="1.6" marker-end="url(#arr-1)"/>
+<rect x="20" y="124" width="280" height="46" rx="12" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<circle cx="44" cy="147" r="5" fill="url(#gacc-1)"/>
+<text class="en" x="60" y="152" text-anchor="start" font-size="13.5" font-weight="600" fill="#fff" fill-opacity="1">Headcount & production share</text><text class="de" x="60" y="152" text-anchor="start" font-size="13.5" font-weight="600" fill="#fff" fill-opacity="1">Mitarbeiter & Produktionsanteil</text>
+<path d="M300 147 C 340 147, 340 200, 380 200" fill="none" stroke="rgba(90,200,250,.55)" stroke-width="1.6" marker-end="url(#arr-1)"/>
+<rect x="20" y="188" width="280" height="46" rx="12" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<circle cx="44" cy="211" r="5" fill="url(#gacc-1)"/>
+<text class="en" x="60" y="216" text-anchor="start" font-size="13.5" font-weight="600" fill="#fff" fill-opacity="1">Vertical integration (1–5)</text><text class="de" x="60" y="216" text-anchor="start" font-size="13.5" font-weight="600" fill="#fff" fill-opacity="1">Fertigungstiefe (1–5)</text>
+<path d="M300 211 C 340 211, 340 200, 380 200" fill="none" stroke="rgba(90,200,250,.55)" stroke-width="1.6" marker-end="url(#arr-1)"/>
+<rect x="20" y="252" width="280" height="46" rx="12" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<circle cx="44" cy="275" r="5" fill="url(#gacc-1)"/>
+<text class="en" x="60" y="280" text-anchor="start" font-size="13.5" font-weight="600" fill="#fff" fill-opacity="1">Shift model & operating hours</text><text class="de" x="60" y="280" text-anchor="start" font-size="13.5" font-weight="600" fill="#fff" fill-opacity="1">Schichtmodell & Betriebsstunden</text>
+<path d="M300 275 C 340 275, 340 200, 380 200" fill="none" stroke="rgba(90,200,250,.55)" stroke-width="1.6" marker-end="url(#arr-1)"/>
+<rect x="20" y="316" width="280" height="46" rx="12" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<circle cx="44" cy="339" r="5" fill="url(#gacc-1)"/>
+<text class="en" x="60" y="344" text-anchor="start" font-size="13.5" font-weight="600" fill="#fff" fill-opacity="1">Buying signals</text><text class="de" x="60" y="344" text-anchor="start" font-size="13.5" font-weight="600" fill="#fff" fill-opacity="1">Kaufsignale</text>
+<path d="M300 339 C 340 339, 340 200, 380 200" fill="none" stroke="rgba(90,200,250,.55)" stroke-width="1.6" marker-end="url(#arr-1)"/>
+<rect x="382" y="96" width="236" height="210" rx="22" fill="url(#gmod-1)" stroke="rgba(90,200,250,.7)" stroke-width="1.5" filter="url(#glow-1)"/>
+<text class="en" x="500" y="130" text-anchor="middle" font-size="16" font-weight="800" fill="#fff" fill-opacity="1">SAIL inference model</text><text class="de" x="500" y="130" text-anchor="middle" font-size="16" font-weight="800" fill="#fff" fill-opacity="1">SAIL-Inferenzmodell</text>
+<text class="en" x="500" y="150" text-anchor="middle" font-size="11.5" font-weight="500" fill="#fff" fill-opacity="0.7">proprietary · explainable</text><text class="de" x="500" y="150" text-anchor="middle" font-size="11.5" font-weight="500" fill="#fff" fill-opacity="0.7">eigenentwickelt · erklärbar</text>
+<text class="en" x="410" y="183" text-anchor="start" font-size="10.5" font-weight="700" fill="#5AC8FA" fill-opacity="1">weights</text><text class="de" x="410" y="183" text-anchor="start" font-size="10.5" font-weight="700" fill="#5AC8FA" fill-opacity="1">Gewichte</text>
+<rect x="410" y="196" width="180" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+<rect x="410" y="196" width="154" height="8" rx="4" fill="url(#gacc-1)"/>
+<circle cx="564" cy="200" r="6" fill="#fff" stroke="#0A84FF" stroke-width="2"/>
+<rect x="410" y="214" width="180" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+<rect x="410" y="214" width="111" height="8" rx="4" fill="url(#gacc-1)"/>
+<circle cx="521" cy="218" r="6" fill="#fff" stroke="#0A84FF" stroke-width="2"/>
+<rect x="410" y="232" width="180" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+<rect x="410" y="232" width="133" height="8" rx="4" fill="url(#gacc-1)"/>
+<circle cx="543" cy="236" r="6" fill="#fff" stroke="#0A84FF" stroke-width="2"/>
+<rect x="410" y="250" width="180" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+<rect x="410" y="250" width="86" height="8" rx="4" fill="url(#gacc-1)"/>
+<circle cx="496" cy="254" r="6" fill="#fff" stroke="#0A84FF" stroke-width="2"/>
+<rect x="410" y="268" width="180" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+<rect x="410" y="268" width="104" height="8" rx="4" fill="url(#gacc-1)"/>
+<circle cx="514" cy="272" r="6" fill="#fff" stroke="#0A84FF" stroke-width="2"/>
+<text x="500" y="296" text-anchor="middle" font-size="10.5" fill="#fff" fill-opacity=".6">w₁ … w₅</text>
+<rect x="382" y="376" width="236" height="118" rx="18" fill="rgba(48,209,88,.10)" stroke="rgba(48,209,88,.6)" stroke-width="1.5"/>
+<text class="en" x="500" y="404" text-anchor="middle" font-size="13" font-weight="700" fill="#30D158" fill-opacity="1">Customer-specific calibration</text><text class="de" x="500" y="404" text-anchor="middle" font-size="13" font-weight="700" fill="#30D158" fill-opacity="1">Kundenspezifische Kalibrierung</text>
+<circle cx="412" cy="426" r="3.5" fill="#30D158"/>
+<text class="en" x="424" y="430" text-anchor="start" font-size="12.5" font-weight="500" fill="#fff" fill-opacity="1">Installed base</text><text class="de" x="424" y="430" text-anchor="start" font-size="12.5" font-weight="500" fill="#fff" fill-opacity="1">Bestandsanlagen</text>
+<circle cx="412" cy="448" r="3.5" fill="#30D158"/>
+<text class="en" x="424" y="452" text-anchor="start" font-size="12.5" font-weight="500" fill="#fff" fill-opacity="1">Service history</text><text class="de" x="424" y="452" text-anchor="start" font-size="12.5" font-weight="500" fill="#fff" fill-opacity="1">Servicehistorie</text>
+<circle cx="412" cy="470" r="3.5" fill="#30D158"/>
+<text class="en" x="424" y="474" text-anchor="start" font-size="12.5" font-weight="500" fill="#fff" fill-opacity="1">Verified sites</text><text class="de" x="424" y="474" text-anchor="start" font-size="12.5" font-weight="500" fill="#fff" fill-opacity="1">Verifizierte Standorte</text>
+<path d="M500 376 L500 312" fill="none" stroke="#30D158" stroke-width="2" marker-end="url(#arr2-1)"/>
+<text class="en" x="680" y="34" text-anchor="start" font-size="12" font-weight="700" fill="#5AC8FA" fill-opacity="1">Inferred demand</text><text class="de" x="680" y="34" text-anchor="start" font-size="12" font-weight="700" fill="#5AC8FA" fill-opacity="1">Abgeleiteter Bedarf</text>
+<rect x="680" y="60" width="300" height="52" rx="12" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<text class="en" x="696" y="81" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Average demand</text><text class="de" x="696" y="81" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Mittlerer Bedarf</text>
+<text class="en" x="696" y="101" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">7.2 m³/min</text><text class="de" x="696" y="101" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">7,2 m³/min</text>
+<path d="M618 200 C 650 200, 650 86, 680 86" fill="none" stroke="rgba(90,200,250,.55)" stroke-width="1.6" marker-end="url(#arr-1)"/>
+<rect x="680" y="124" width="300" height="52" rx="12" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<text class="en" x="696" y="145" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Peak demand</text><text class="de" x="696" y="145" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Spitzenbedarf</text>
+<text class="en" x="696" y="165" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">9.4 m³/min</text><text class="de" x="696" y="165" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">9,4 m³/min</text>
+<path d="M618 200 C 650 200, 650 150, 680 150" fill="none" stroke="rgba(90,200,250,.55)" stroke-width="1.6" marker-end="url(#arr-1)"/>
+<rect x="680" y="188" width="300" height="52" rx="12" fill="rgba(10,132,255,.22)" stroke="rgba(90,200,250,.8)"/>
+<text class="en" x="696" y="209" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Installation demand</text><text class="de" x="696" y="209" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Installationsbedarf</text>
+<text class="en" x="696" y="229" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">12.9 m³/min</text><text class="de" x="696" y="229" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">12,9 m³/min</text>
+<path d="M618 200 C 650 200, 650 214, 680 214" fill="none" stroke="rgba(90,200,250,.55)" stroke-width="1.6" marker-end="url(#arr-1)"/>
+<rect x="680" y="252" width="300" height="52" rx="12" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<text class="en" x="696" y="273" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Energy & budget</text><text class="de" x="696" y="273" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Energie & Budget</text>
+<text class="en" x="696" y="293" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">€ 85k · 0.4 GWh/a</text><text class="de" x="696" y="293" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">85 Tsd. € · 0,4 GWh/a</text>
+<path d="M618 200 C 650 200, 650 278, 680 278" fill="none" stroke="rgba(90,200,250,.55)" stroke-width="1.6" marker-end="url(#arr-1)"/>
+<text class="en" x="680" y="334" text-anchor="start" font-size="12.5" font-weight="700" fill="#5AC8FA" fill-opacity="1">→ 30 points in the priority score</text><text class="de" x="680" y="334" text-anchor="start" font-size="12.5" font-weight="700" fill="#5AC8FA" fill-opacity="1">→ 30 Punkte im Prioritäts-Score</text>
+<path d="M950 316 L950 440 C 950 462, 932 462, 910 462 L640 462" fill="none" stroke="#30D158" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arr2-1)"/>
+<text class="en" x="955" y="528" text-anchor="end" font-size="11.5" font-weight="500" fill="#30D158" fill-opacity="1">Corrections after the visit flow back into the calibration</text><text class="de" x="955" y="528" text-anchor="end" font-size="11.5" font-weight="500" fill="#30D158" fill-opacity="1">Korrekturen nach dem Besuch fließen in die Kalibrierung zurück</text>
+</svg><svg class="diagram diagram-m" viewBox="0 0 400 985" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SAIL inference model" font-family="-apple-system,BlinkMacSystemFont,Inter,Helvetica Neue,Arial,sans-serif">
+<defs>
+  <linearGradient id="gaccm-1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5AC8FA"/><stop offset="1" stop-color="#0A84FF"/></linearGradient>
+  <linearGradient id="gmodm-1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="rgba(10,132,255,.28)"/><stop offset="1" stop-color="rgba(191,90,242,.18)"/></linearGradient>
+  <marker id="arrm-1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#5AC8FA"/></marker>
+  <marker id="arr2m-1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#30D158"/></marker>
+</defs>
+<text class="en" x="20" y="30" text-anchor="start" font-size="12" font-weight="700" fill="#5AC8FA" fill-opacity="1">Features from enrichment</text><text class="de" x="20" y="30" text-anchor="start" font-size="12" font-weight="700" fill="#5AC8FA" fill-opacity="1">Merkmale aus der Anreicherung</text>
+<rect x="20" y="44" width="360" height="40" rx="11" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<circle cx="42" cy="64" r="4.5" fill="url(#gaccm-1)"/>
+<text class="en" x="56" y="69" text-anchor="start" font-size="14" font-weight="600" fill="#fff" fill-opacity="1">Industry & process profile</text><text class="de" x="56" y="69" text-anchor="start" font-size="14" font-weight="600" fill="#fff" fill-opacity="1">Branche & Prozessprofil</text>
+<rect x="20" y="92" width="360" height="40" rx="11" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<circle cx="42" cy="112" r="4.5" fill="url(#gaccm-1)"/>
+<text class="en" x="56" y="117" text-anchor="start" font-size="14" font-weight="600" fill="#fff" fill-opacity="1">Headcount & production share</text><text class="de" x="56" y="117" text-anchor="start" font-size="14" font-weight="600" fill="#fff" fill-opacity="1">Mitarbeiter & Produktionsanteil</text>
+<rect x="20" y="140" width="360" height="40" rx="11" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<circle cx="42" cy="160" r="4.5" fill="url(#gaccm-1)"/>
+<text class="en" x="56" y="165" text-anchor="start" font-size="14" font-weight="600" fill="#fff" fill-opacity="1">Vertical integration (1–5)</text><text class="de" x="56" y="165" text-anchor="start" font-size="14" font-weight="600" fill="#fff" fill-opacity="1">Fertigungstiefe (1–5)</text>
+<rect x="20" y="188" width="360" height="40" rx="11" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<circle cx="42" cy="208" r="4.5" fill="url(#gaccm-1)"/>
+<text class="en" x="56" y="213" text-anchor="start" font-size="14" font-weight="600" fill="#fff" fill-opacity="1">Shift model & operating hours</text><text class="de" x="56" y="213" text-anchor="start" font-size="14" font-weight="600" fill="#fff" fill-opacity="1">Schichtmodell & Betriebsstunden</text>
+<rect x="20" y="236" width="360" height="40" rx="11" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<circle cx="42" cy="256" r="4.5" fill="url(#gaccm-1)"/>
+<text class="en" x="56" y="261" text-anchor="start" font-size="14" font-weight="600" fill="#fff" fill-opacity="1">Buying signals</text><text class="de" x="56" y="261" text-anchor="start" font-size="14" font-weight="600" fill="#fff" fill-opacity="1">Kaufsignale</text>
+<path d="M200 278 L200 312" fill="none" stroke="#5AC8FA" stroke-width="2" marker-end="url(#arrm-1)"/>
+<rect x="40" y="318" width="320" height="196" rx="20" fill="url(#gmodm-1)" stroke="rgba(90,200,250,.7)" stroke-width="1.5"/>
+<text class="en" x="200" y="350" text-anchor="middle" font-size="17" font-weight="800" fill="#fff" fill-opacity="1">SAIL inference model</text><text class="de" x="200" y="350" text-anchor="middle" font-size="17" font-weight="800" fill="#fff" fill-opacity="1">SAIL-Inferenzmodell</text>
+<text class="en" x="200" y="370" text-anchor="middle" font-size="12" font-weight="500" fill="#fff" fill-opacity="0.7">proprietary · explainable</text><text class="de" x="200" y="370" text-anchor="middle" font-size="12" font-weight="500" fill="#fff" fill-opacity="0.7">eigenentwickelt · erklärbar</text>
+<text class="en" x="66" y="400" text-anchor="start" font-size="11" font-weight="700" fill="#5AC8FA" fill-opacity="1">weights</text><text class="de" x="66" y="400" text-anchor="start" font-size="11" font-weight="700" fill="#5AC8FA" fill-opacity="1">Gewichte</text>
+<rect x="66" y="412" width="268" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+<rect x="66" y="412" width="230" height="8" rx="4" fill="url(#gaccm-1)"/>
+<circle cx="296" cy="416" r="6" fill="#fff" stroke="#0A84FF" stroke-width="2"/>
+<rect x="66" y="430" width="268" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+<rect x="66" y="430" width="166" height="8" rx="4" fill="url(#gaccm-1)"/>
+<circle cx="232" cy="434" r="6" fill="#fff" stroke="#0A84FF" stroke-width="2"/>
+<rect x="66" y="448" width="268" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+<rect x="66" y="448" width="198" height="8" rx="4" fill="url(#gaccm-1)"/>
+<circle cx="264" cy="452" r="6" fill="#fff" stroke="#0A84FF" stroke-width="2"/>
+<rect x="66" y="466" width="268" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+<rect x="66" y="466" width="128" height="8" rx="4" fill="url(#gaccm-1)"/>
+<circle cx="194" cy="470" r="6" fill="#fff" stroke="#0A84FF" stroke-width="2"/>
+<rect x="66" y="484" width="268" height="8" rx="4" fill="rgba(255,255,255,.12)"/>
+<rect x="66" y="484" width="155" height="8" rx="4" fill="url(#gaccm-1)"/>
+<circle cx="221" cy="488" r="6" fill="#fff" stroke="#0A84FF" stroke-width="2"/>
+<path d="M200 516 L200 550" fill="none" stroke="#5AC8FA" stroke-width="2" marker-end="url(#arrm-1)"/>
+<text class="en" x="20" y="572" text-anchor="start" font-size="12" font-weight="700" fill="#5AC8FA" fill-opacity="1">Inferred demand</text><text class="de" x="20" y="572" text-anchor="start" font-size="12" font-weight="700" fill="#5AC8FA" fill-opacity="1">Abgeleiteter Bedarf</text>
+<rect x="20" y="584" width="174" height="54" rx="12" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<text class="en" x="32" y="605" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Average demand</text><text class="de" x="32" y="605" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Mittlerer Bedarf</text>
+<text class="en" x="32" y="626" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">7.2 m³/min</text><text class="de" x="32" y="626" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">7,2 m³/min</text>
+<rect x="206" y="584" width="174" height="54" rx="12" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<text class="en" x="218" y="605" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Peak demand</text><text class="de" x="218" y="605" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Spitzenbedarf</text>
+<text class="en" x="218" y="626" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">9.4 m³/min</text><text class="de" x="218" y="626" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">9,4 m³/min</text>
+<rect x="20" y="646" width="174" height="54" rx="12" fill="rgba(10,132,255,.22)" stroke="rgba(90,200,250,.8)"/>
+<text class="en" x="32" y="667" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Installation demand</text><text class="de" x="32" y="667" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Installationsbedarf</text>
+<text class="en" x="32" y="688" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">12.9 m³/min</text><text class="de" x="32" y="688" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">12,9 m³/min</text>
+<rect x="206" y="646" width="174" height="54" rx="12" fill="rgba(255,255,255,.07)" stroke="rgba(255,255,255,.16)"/>
+<text class="en" x="218" y="667" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Energy & budget</text><text class="de" x="218" y="667" text-anchor="start" font-size="11.5" font-weight="600" fill="#fff" fill-opacity="0.75">Energie & Budget</text>
+<text class="en" x="218" y="688" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">€ 85k · 0.4 GWh/a</text><text class="de" x="218" y="688" text-anchor="start" font-size="15" font-weight="800" fill="#fff" fill-opacity="1">85 Tsd. € · 0,4 GWh/a</text>
+<text class="en" x="200" y="728" text-anchor="middle" font-size="12.5" font-weight="700" fill="#5AC8FA" fill-opacity="1">→ 30 points in the priority score</text><text class="de" x="200" y="728" text-anchor="middle" font-size="12.5" font-weight="700" fill="#5AC8FA" fill-opacity="1">→ 30 Punkte im Prioritäts-Score</text>
+<path d="M200 740 L200 774" fill="none" stroke="#30D158" stroke-width="2" stroke-dasharray="6 6" marker-end="url(#arr2m-1)"/>
+<rect x="40" y="780" width="320" height="118" rx="18" fill="rgba(48,209,88,.10)" stroke="rgba(48,209,88,.6)" stroke-width="1.5"/>
+<text class="en" x="200" y="808" text-anchor="middle" font-size="13.5" font-weight="700" fill="#30D158" fill-opacity="1">Customer-specific calibration</text><text class="de" x="200" y="808" text-anchor="middle" font-size="13.5" font-weight="700" fill="#30D158" fill-opacity="1">Kundenspezifische Kalibrierung</text>
+<circle cx="70" cy="830" r="3.5" fill="#30D158"/>
+<text class="en" x="82" y="834" text-anchor="start" font-size="12.5" font-weight="500" fill="#fff" fill-opacity="1">Installed base</text><text class="de" x="82" y="834" text-anchor="start" font-size="12.5" font-weight="500" fill="#fff" fill-opacity="1">Bestandsanlagen</text>
+<circle cx="70" cy="852" r="3.5" fill="#30D158"/>
+<text class="en" x="82" y="856" text-anchor="start" font-size="12.5" font-weight="500" fill="#fff" fill-opacity="1">Service history</text><text class="de" x="82" y="856" text-anchor="start" font-size="12.5" font-weight="500" fill="#fff" fill-opacity="1">Servicehistorie</text>
+<circle cx="70" cy="874" r="3.5" fill="#30D158"/>
+<text class="en" x="82" y="878" text-anchor="start" font-size="12.5" font-weight="500" fill="#fff" fill-opacity="1">Verified sites</text><text class="de" x="82" y="878" text-anchor="start" font-size="12.5" font-weight="500" fill="#fff" fill-opacity="1">Verifizierte Standorte</text>
+<path d="M40 839 L18 839 L18 416 L34 416" fill="none" stroke="#30D158" stroke-width="2" marker-end="url(#arr2m-1)"/>
+<text class="en" x="200" y="936" text-anchor="middle" font-size="11" font-weight="500" fill="#30D158" fill-opacity="1">Corrections after the visit flow back into the calibration</text><text class="de" x="200" y="936" text-anchor="middle" font-size="11" font-weight="500" fill="#30D158" fill-opacity="1">Korrekturen nach dem Besuch fließen in die Kalibrierung zurück</text>
+<text class="en" x="200" y="970" text-anchor="middle" font-size="11" font-weight="500" fill="#30D158" fill-opacity="0.85">↑ calibration tunes the model weights</text><text class="de" x="200" y="970" text-anchor="middle" font-size="11" font-weight="500" fill="#30D158" fill-opacity="0.85">↑ Kalibrierung justiert die Modellgewichte</text>
+</svg></figure></div>
+  </div>
+</section>
 <section class="sec">
   <div class="wrap split">
     <div class="shot sm"><img src="app-kunde.jpg" alt="Account record with score breakdown and inferred demand" loading="lazy"></div>
@@ -224,6 +385,6 @@
     </div>
   </div>
 </footer>
-<script src="site.js?v=88739ded"></script>
+<script src="site.js?v=c19c4a68"></script>
 </body>
 </html>
