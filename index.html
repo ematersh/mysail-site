@@ -11,9 +11,18 @@
 <meta property="og:image" content="https://mysail.ai/app-dashboard.jpg">
 <meta property="og:url" content="https://mysail.ai/index.html">
 <link rel="canonical" href="https://mysail.ai/index.html">
-<link rel="stylesheet" href="site.css?v=ae153f78">
+<meta name="theme-color" content="#040814">
+<link rel="preload" href="fonts/archivo-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="site.css?v=20261003">
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></symbol>
+  <symbol id="i-type" viewBox="0 0 24 24"><path d="M4 7V5h16v2M12 5v14M9 19h6"/></symbol>
+  <symbol id="i-table" viewBox="0 0 24 24"><path d="M4 5h16v14H4zM4 10h16M4 15h16M10 5v14"/></symbol>
+  <symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></symbol>
+</svg>
 <header class="top">
   <div class="wrap">
     <a class="logo" href="index.html"><img src="logo-white.png" alt="SAIL – Sales Intelligence"></a>
@@ -27,81 +36,274 @@
   <div class="wrap mwrap"><nav class="mnav"><a href="index.html"><span class="en">Home</span><span class="de">Start</span></a><a href="product.html"><span class="en">Product</span><span class="de">Produkt</span></a><a href="pricing.html"><span class="en">Pricing</span><span class="de">Preise</span></a><a href="about.html"><span class="en">About</span><span class="de">Über uns</span></a><a href="blog.html"><span class="en">Blog</span><span class="de">Blog</span></a><a href="faq.html"><span class="en">FAQ</span><span class="de">FAQ</span></a><a href="contact.html"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a></nav></div>
 </header>
 <main>
-
-
-<section class="hero">
-  <div class="wrap">
-    <span class="eyebrow"><i></i><span class="en">Now in pilot with industrial sales teams</span><span class="de">Jetzt im Pilotbetrieb mit Industrie-Vertriebsteams</span></span>
-    <h1 class="en">Navigate <em>Industrial Intelligence</em></h1>
-    <h1 class="de">Navigate <em>Industrial Intelligence</em></h1>
-    <p class="lead en">SAIL tells your field sales team which companies in their territory need what you sell – and why. Enriched from public data, demand inferred per site by our proprietary model, ranked by opportunity, briefed before every visit.</p>
-    <p class="lead de">SAIL zeigt Ihrem Außendienst, welche Unternehmen im Gebiet brauchen, was Sie verkaufen – und warum. Angereichert aus öffentlichen Daten, Bedarf je Standort per eigenem Inferenzmodell abgeleitet, nach Chance priorisiert, vor jedem Besuch gebrieft.</p>
-    <div class="ctas">
-      <a class="btn p lg" href="contact.html"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a>
-      <a class="btn s lg" href="product.html"><span class="en">See how it works</span><span class="de">So funktioniert es</span></a>
+<!-- ═════════ 01 Hero ═════════ -->
+<section class="cine" id="hero" data-scroll="top">
+  <div class="cine-bg" aria-hidden="true">
+    <div class="scene">
+      <div class="glow glow-a"></div>
+      <svg class="sail sA" viewBox="0 0 560 1000">
+        <defs>
+          <linearGradient id="sa-f" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0B1D46"/><stop offset=".5" stop-color="#061028"/><stop offset="1" stop-color="#040814"/></linearGradient>
+          <linearGradient id="sa-r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5AC8FA" stop-opacity="0"/><stop offset=".28" stop-color="#9BE0FF" stop-opacity=".95"/><stop offset=".72" stop-color="#0A84FF" stop-opacity=".5"/><stop offset="1" stop-color="#0A84FF" stop-opacity="0"/></linearGradient>
+          <linearGradient id="sa-l" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5AC8FA" stop-opacity="0"/><stop offset=".4" stop-color="#5AC8FA" stop-opacity=".75"/><stop offset="1" stop-color="#0A84FF" stop-opacity="0"/></linearGradient>
+        </defs>
+        <path fill="url(#sa-f)" d="M270 0C440 220 550 520 510 1000H0C150 760 255 430 270 0Z"/>
+        <path fill="none" stroke="url(#sa-r)" stroke-width="1.6" d="M270 0C440 220 550 520 510 1000"/>
+        <path fill="none" stroke="url(#sa-l)" stroke-width="1.3" d="M270 0C255 430 150 760 0 1000"/>
+      </svg>
+      <div class="glow glow-b"></div>
+      <svg class="sail sB" viewBox="0 0 460 1000">
+        <defs>
+          <linearGradient id="sb-f" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E2759"/><stop offset=".45" stop-color="#071433"/><stop offset="1" stop-color="#040814"/></linearGradient>
+          <linearGradient id="sb-r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#5AC8FA" stop-opacity="0"/><stop offset=".4" stop-color="#8FDBFF" stop-opacity=".85"/><stop offset="1" stop-color="#0A84FF" stop-opacity="0"/></linearGradient>
+        </defs>
+        <path fill="url(#sb-f)" d="M400 0C350 300 210 640 0 1000H380C450 700 440 330 400 0Z"/>
+        <path fill="none" stroke="url(#sb-r)" stroke-width="1.4" d="M400 0C440 330 450 700 380 1000"/>
+      </svg>
+      <div class="grain"></div>
     </div>
-    <p class="sub en">Works with your existing CRM · GDPR-compliant · Hosted in the EU</p>
-    <p class="sub de">Funktioniert mit Ihrem bestehenden CRM · DSGVO-konform · Hosting in der EU</p>
-    <div class="shot"><img src="app-dashboard.jpg" alt="SAIL dashboard with ranked candidates, pipeline and demand per region" loading="eager"></div>
+  </div>
+  <div class="wrap">
+    <div class="cine-top">
+      <span class="pill mono"><i></i><span class="en">Now in pilot with industrial sales teams</span><span class="de">Jetzt im Pilotbetrieb mit Industrie-Vertriebsteams</span></span>
+      <h1 class="cine-h" aria-label="Navigate Industrial Intelligence">
+        <span class="ln" aria-hidden="true"><span style="--i:0">Navigate</span></span>
+        <span class="ln" aria-hidden="true"><span class="lit" style="--i:1">Industrial</span> <span class="lit" style="--i:2">Intelligence</span></span>
+      </h1>
+      <p class="cine-lead en">SAIL tells your field sales team which companies in their territory need what you sell – and why. Enriched from public data, demand inferred per site by our proprietary model, ranked by opportunity, briefed before every visit.</p>
+      <p class="cine-lead de">SAIL zeigt Ihrem Außendienst, welche Unternehmen im Gebiet brauchen, was Sie verkaufen – und warum. Angereichert aus öffentlichen Daten, Bedarf je Standort per eigenem Inferenzmodell abgeleitet, nach Chance priorisiert, vor jedem Besuch gebrieft.</p>
+      <div class="ctas">
+        <a class="btn p lg magnetic" href="contact.html"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a>
+        <a class="btn s lg" href="product.html"><span class="en">See how it works</span><span class="de">So funktioniert es</span></a>
+      </div>
+      <p class="trust mono en">Works with your existing CRM · GDPR-compliant · Hosted in the EU</p>
+      <p class="trust mono de">Funktioniert mit Ihrem bestehenden CRM · DSGVO-konform · Hosting in der EU</p>
+    </div>
+    <div class="cine-stage">
+      <div class="smoke smoke-back" aria-hidden="true"><i></i><i></i></div>
+      <div class="shot3d"><img src="app-dashboard.jpg" width="1600" height="1000" alt="SAIL dashboard with ranked candidates, pipeline and demand per region" fetchpriority="high" decoding="async"></div>
+      <div class="smoke smoke-front" aria-hidden="true"><i></i><i></i></div>
+      <div class="chip c1" aria-hidden="true">
+        <svg class="ring" viewBox="0 0 44 44"><circle class="tr" cx="22" cy="22" r="18"/><circle class="pr" cx="22" cy="22" r="18" pathLength="1" stroke-dasharray="1" stroke-dashoffset=".15"/><text x="22" y="26.5">85</text></svg>
+        <div><small><span class="de">A-Kandidat · Score</span><span class="en">A candidate · score</span></small>Schramberg Antriebstechnik AG</div>
+      </div>
+      <div class="chip c2" aria-hidden="true">
+        <div><small><span class="de">Installationsbedarf</span><span class="en">Installation demand</span></small><b><span class="de">12,9 m³/min</span><span class="en">12.9 m³/min</span></b></div>
+      </div>
+      <div class="chip c3" aria-hidden="true">
+        <i class="sig"></i>
+        <div><small><span class="de">Kaufsignal</span><span class="en">Buying signal</span></small><span class="de">Neubau / Erweiterung</span><span class="en">New build / extension</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="sec tight">
+<!-- ═════════ 02 Kennzahlen ═════════ -->
+<section class="sec sec-stats">
   <div class="wrap">
     <div class="stats">
-      <div class="stat"><b>4</b><span class="en">steps from company name to visit briefing</span><span class="de">Schritte vom Firmennamen zum Besuchsbriefing</span></div>
-      <div class="stat"><b>10+</b><span class="en">public and internal data sources per account</span><span class="de">öffentliche und interne Datenquellen je Kunde</span></div>
-      <div class="stat"><b>6</b><span class="en">transparent score dimensions, calibrated per customer</span><span class="de">transparente Score-Dimensionen, kundenspezifisch kalibriert</span></div>
-      <div class="stat"><b>&lt; 2 min</b><span class="en">from Excel upload to ranked priority list</span><span class="de">vom Excel-Upload zur fertigen Prioritätsliste</span></div>
+      <div class="stat rv" style="--i:0"><b data-to="4">4</b><p class="en">steps from company name to visit briefing</p><p class="de">Schritte vom Firmennamen zum Besuchsbriefing</p></div>
+      <div class="stat rv" style="--i:1"><b data-to="10" data-suf="+">10+</b><p class="en">public and internal data sources per account</p><p class="de">öffentliche und interne Datenquellen je Kunde</p></div>
+      <div class="stat rv" style="--i:2"><b data-to="6">6</b><p class="en">transparent score dimensions, calibrated per customer</p><p class="de">transparente Score-Dimensionen, kundenspezifisch kalibriert</p></div>
+      <div class="stat rv" style="--i:3"><b data-to="2" data-pre="&lt; " data-suf=" min">&lt; 2 min</b><p class="en">from Excel upload to ranked priority list</p><p class="de">vom Excel-Upload zur fertigen Prioritätsliste</p></div>
     </div>
   </div>
 </section>
 
-<section class="sec alt">
+<!-- ═════════ 03 Problem ═════════ -->
+<section class="sec alt" id="problem">
   <div class="wrap">
-    <div class="center">
-      <div class="kicker"><span class="en">The problem</span><span class="de">Das Problem</span></div>
-      <h2 class="h2 en">Your best salespeople spend most of their week guessing.</h2>
-      <h2 class="h2 de">Ihre besten Vertriebler verbringen die meiste Zeit mit Raten.</h2>
-      <p class="intro en">Industrial territories hold thousands of plants. Which ones are expanding? Which run three shifts on a compressor fleet from 2009? Which just won a tender that needs new capacity? Today that knowledge lives in scattered news, registers and the heads of a few veterans.</p>
-      <p class="intro de">Ein Vertriebsgebiet umfasst tausende Betriebe. Welche expandieren? Welche fahren drei Schichten auf einer Kompressorstation von 2009? Wer hat gerade eine Ausschreibung gewonnen, die neue Kapazität braucht? Dieses Wissen steckt heute verstreut in Nachrichten, Registern und den Köpfen weniger Routiniers.</p>
+    <div class="bar mono"><span><i></i><span class="de">Das Problem</span><span class="en">The problem</span></span></div>
+    <div class="marq" aria-hidden="true"><div class="marq-t">
+      <div><span class="de">Kalte Listen ohne Kontext</span><span class="en">Cold lists, no context</span><i></i><span class="de">Stunden manueller Recherche</span><span class="en">Hours of manual research</span><i></i><span class="de">Verpasste Signale</span><span class="en">Missed signals</span><i></i></div>
+      <div><span class="de">Kalte Listen ohne Kontext</span><span class="en">Cold lists, no context</span><i></i><span class="de">Stunden manueller Recherche</span><span class="en">Hours of manual research</span><i></i><span class="de">Verpasste Signale</span><span class="en">Missed signals</span><i></i></div>
+    </div></div>
+    <div class="head2">
+      <h2 class="h2 rv en">Your best salespeople spend most of their week guessing.</h2>
+      <h2 class="h2 rv de">Ihre besten Vertriebler verbringen die meiste Zeit mit Raten.</h2>
+      <p class="intro rv en" style="--i:1">Industrial territories hold thousands of plants. Which ones are expanding? Which run three shifts on a compressor fleet from 2009? Which just won a tender that needs new capacity? Today that knowledge lives in scattered news, registers and the heads of a few veterans.</p>
+      <p class="intro rv de" style="--i:1">Ein Vertriebsgebiet umfasst tausende Betriebe. Welche expandieren? Welche fahren drei Schichten auf einer Kompressorstation von 2009? Wer hat gerade eine Ausschreibung gewonnen, die neue Kapazität braucht? Dieses Wissen steckt heute verstreut in Nachrichten, Registern und den Köpfen weniger Routiniers.</p>
     </div>
-    <div class="grid g3" style="margin-top:44px">
-      <div class="card"><div class="ic i-folder"></div><h4 class="en">Cold lists, no context</h4><h4 class="de">Kalte Listen ohne Kontext</h4><p class="en">Bought address lists tell you a company exists – not whether it needs compressed air, how much, or when.</p><p class="de">Gekaufte Adresslisten sagen, dass ein Betrieb existiert – nicht, ob er Druckluft braucht, wie viel und wann.</p></div>
-      <div class="card"><div class="ic i-clock"></div><h4 class="en">Hours of manual research</h4><h4 class="de">Stunden manueller Recherche</h4><p class="en">Website, register, news, LinkedIn, the CRM history – every visit starts with the same 40 minutes of digging.</p><p class="de">Website, Register, News, LinkedIn, CRM-Historie – jeder Besuch beginnt mit denselben 40 Minuten Suche.</p></div>
-      <div class="card"><div class="ic i-target"></div><h4 class="en">Missed signals</h4><h4 class="de">Verpasste Signale</h4><p class="en">The extension permit, the new plant manager, the energy-efficiency subsidy: buying windows close before anyone notices.</p><p class="de">Die Baugenehmigung, der neue Werksleiter, die Effizienzförderung: Kauffenster schließen sich, bevor es jemand bemerkt.</p></div>
+    <div class="cells">
+      <div class="cell rv" style="--i:0">
+        <span class="mono">01</span>
+        <div class="mg mg-list" aria-hidden="true">
+          <div class="lrow" style="--i:0;--w:72%"><i></i><b></b><em>?</em></div>
+          <div class="lrow" style="--i:1;--w:54%"><i></i><b></b><em>?</em></div>
+          <div class="lrow" style="--i:2;--w:88%"><i></i><b></b><em>?</em></div>
+          <div class="lrow" style="--i:3;--w:46%"><i></i><b></b><em>?</em></div>
+          <div class="lrow" style="--i:4;--w:64%"><i></i><b></b><em>?</em></div>
+          <div class="lrow" style="--i:5;--w:80%"><i></i><b></b><em>?</em></div>
+        </div>
+        <h3 class="en">Cold lists, no context</h3><h3 class="de">Kalte Listen ohne Kontext</h3>
+        <p class="en">Bought address lists tell you a company exists – not whether it needs compressed air, how much, or when.</p>
+        <p class="de">Gekaufte Adresslisten sagen, dass ein Betrieb existiert – nicht, ob er Druckluft braucht, wie viel und wann.</p>
+      </div>
+      <div class="cell rv" style="--i:1">
+        <span class="mono">02</span>
+        <div class="mg" aria-hidden="true">
+          <svg class="clock" viewBox="0 0 170 170"><circle class="tr" cx="85" cy="85" r="74"/><circle class="pr" cx="85" cy="85" r="74" pathLength="1"/><line class="hand" x1="85" y1="85" x2="85" y2="38"/><circle cx="85" cy="85" r="5" style="fill:#fff;stroke:none"/><text class="num" x="85" y="133" data-to="40">40</text><text class="unit" x="85" y="148">MIN</text></svg>
+        </div>
+        <h3 class="en">Hours of manual research</h3><h3 class="de">Stunden manueller Recherche</h3>
+        <p class="en">Website, register, news, LinkedIn, the CRM history – every visit starts with the same 40 minutes of digging.</p>
+        <p class="de">Website, Register, News, LinkedIn, CRM-Historie – jeder Besuch beginnt mit denselben 40 Minuten Suche.</p>
+      </div>
+      <div class="cell rv" style="--i:2">
+        <span class="mono">03</span>
+        <div class="mg" aria-hidden="true">
+          <svg class="radar" viewBox="0 0 210 210">
+            <defs><linearGradient id="sw" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0A84FF" stop-opacity="0"/><stop offset="1" stop-color="#0A84FF" stop-opacity=".34"/></linearGradient></defs>
+            <circle class="rg" cx="105" cy="105" r="34"/><circle class="rg" cx="105" cy="105" r="68"/><circle class="rg" cx="105" cy="105" r="100"/>
+            <path class="rg" d="M105 5v200M5 105h200"/>
+            <g class="sweep"><path d="M105 105V5A100 100 0 0 1 191.6 55Z" fill="url(#sw)"/><path d="M105 105L191.6 55" stroke="#0A84FF" stroke-width="1.5"/></g>
+            <circle class="blip" cx="150" cy="62" r="4" style="--t:-.21s"/>
+            <circle class="blip" cx="58" cy="136" r="4" style="--t:-2.8s"/>
+            <circle class="blip" cx="128" cy="170" r="4" style="--t:-3.97s"/>
+            <text class="de" x="158" y="58">Baugenehmigung</text><text class="en" x="158" y="58">Extension permit</text>
+            <text class="de" x="50" y="132" text-anchor="end">Neuer Werksleiter</text><text class="en" x="50" y="132" text-anchor="end">New plant manager</text>
+            <text class="de" x="137" y="184">Effizienzförderung</text><text class="en" x="137" y="184">Efficiency subsidy</text>
+          </svg>
+        </div>
+        <h3 class="en">Missed signals</h3><h3 class="de">Verpasste Signale</h3>
+        <p class="en">The extension permit, the new plant manager, the energy-efficiency subsidy: buying windows close before anyone notices.</p>
+        <p class="de">Die Baugenehmigung, der neue Werksleiter, die Effizienzförderung: Kauffenster schließen sich, bevor es jemand bemerkt.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sec" id="workflow">
-  <div class="wrap">
-    <div class="center">
-      <div class="kicker"><span class="en">How SAIL works</span><span class="de">So arbeitet SAIL</span></div>
-      <h2 class="h2 en">One automated workflow. Four steps. Zero spreadsheets.</h2>
-      <h2 class="h2 de">Ein automatischer Workflow. Vier Schritte. Keine Tabellen.</h2>
-      <p class="intro en">Add a company – by name, by Excel import or by searching a city and radius – and SAIL runs the whole chain on its own.</p>
-      <p class="intro de">Fügen Sie ein Unternehmen hinzu – per Name, Excel-Import oder Gebietssuche mit Stadt und Radius – und SAIL durchläuft die gesamte Kette automatisch.</p>
-    </div>
-    <div class="steps" style="margin-top:44px">
-      <div class="step"><span class="n">1</span><h4 class="en">Capture</h4><h4 class="de">Erfassen</h4><p class="en">Type a name, drop an Excel list or search a territory by city + radius or postcode. Duplicates are merged automatically.</p><p class="de">Name eintippen, Excel-Liste ablegen oder Gebiet per Stadt + Radius bzw. PLZ durchsuchen. Dubletten werden automatisch zusammengeführt.</p></div>
-      <div class="step"><span class="n">2</span><h4 class="en">Enrich</h4><h4 class="de">Anreichern</h4><p class="en">Website, company registers, news, tenders, financial outlook, decision makers and your own installed-base data – gathered and cited.</p><p class="de">Website, Handelsregister, Nachrichten, Ausschreibungen, Wirtschaftsprognose, Entscheider und Ihre eigenen Bestandsdaten – gesammelt und mit Quelle.</p></div>
-      <div class="step"><span class="n">3</span><h4 class="en">Infer demand</h4><h4 class="de">Bedarf ableiten</h4><p class="en">Industry, products, vertical integration, headcount and shifts feed our proprietary inference model, whose weights are calibrated to your customer base – every factor stays visible.</p><p class="de">Branche, Produkte, Fertigungstiefe, Mitarbeiter und Schichten fließen in unser eigenentwickeltes Inferenzmodell, dessen Gewichte kundenspezifisch kalibriert werden – jeder Faktor bleibt sichtbar.</p></div>
-      <div class="step"><span class="n">4</span><h4 class="en">Prioritise &amp; act</h4><h4 class="de">Priorisieren &amp; handeln</h4><p class="en">A 0–100 score ranks every account. Live news, travel time from where you are and an AI briefing get you ready for the visit.</p><p class="de">Ein Score von 0–100 ordnet jeden Kunden ein. Live-Nachrichten, Fahrzeit vom aktuellen Standort und ein KI-Briefing bereiten den Besuch vor.</p></div>
+<!-- ═════════ 04 Workflow ═════════ -->
+<section class="sec flow" id="workflow" data-scroll="pin">
+  <div class="flow-stage">
+    <div class="wrap">
+    <div class="bar mono"><span><i></i><span class="de">So arbeitet SAIL</span><span class="en">How SAIL works</span></span></div>
+      <div class="flow-grid">
+        <div class="flow-head">
+          <span class="kick mono"><span class="de">So arbeitet SAIL</span><span class="en">How SAIL works</span></span>
+          <h2 class="h2 en">One automated workflow. Four steps. Zero spreadsheets.</h2>
+          <h2 class="h2 de">Ein automatischer Workflow. Vier Schritte. Keine Tabellen.</h2>
+          <p class="intro en">Add a company – by name, by Excel import or by searching a city and radius – and SAIL runs the whole chain on its own.</p>
+          <p class="intro de">Fügen Sie ein Unternehmen hinzu – per Name, Excel-Import oder Gebietssuche mit Stadt und Radius – und SAIL durchläuft die gesamte Kette automatisch.</p>
+        </div>
+
+        <div class="flow-item" style="--r:2">
+          <div class="fstep"><span class="num mono">01</span><div>
+            <h3 class="en">Capture</h3><h3 class="de">Erfassen</h3>
+            <div class="step-body"><div>
+              <p class="en">Type a name, drop an Excel list or search a territory by city + radius or postcode. Duplicates are merged automatically.</p>
+              <p class="de">Name eintippen, Excel-Liste ablegen oder Gebiet per Stadt + Radius bzw. PLZ durchsuchen. Dubletten werden automatisch zusammengeführt.</p>
+            </div></div>
+          </div></div>
+          <div class="panel"><div class="pcard gt">
+            <div class="pc-head mono"><span>01 — <span class="de">Erfassen</span><span class="en">Capture</span></span><span class="de">Kunde anlegen</span><span class="en">Add account</span></div>
+            <div class="pbody">
+              <div class="cap-input"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg><span class="typed">Schramberg Antriebstechnik AG</span><i class="caret"></i></div>
+              <div class="ways">
+                <div class="way on stag" style="--i:0"><svg class="ic" aria-hidden="true"><use href="#i-type"/></svg><span class="de">Name eintippen</span><span class="en">Type a name</span><small><span class="de">ein Unternehmen</span><span class="en">one company</span></small></div>
+                <div class="way stag" style="--i:1"><svg class="ic" aria-hidden="true"><use href="#i-table"/></svg><span class="de">Excel-Liste</span><span class="en">Excel list</span><small><span class="de">Datei ablegen</span><span class="en">drop a file</span></small></div>
+                <div class="way stag" style="--i:2"><svg class="ic" aria-hidden="true"><use href="#i-target"/></svg><span class="de">Stadt + Radius</span><span class="en">City + radius</span><small><span class="de">oder PLZ</span><span class="en">or postcode</span></small></div>
+              </div>
+              <div class="cap-ok stag" style="--i:4"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg><span class="de">Dubletten werden automatisch zusammengeführt</span><span class="en">Duplicates are merged automatically</span></div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="flow-item" style="--r:3">
+          <div class="fstep"><span class="num mono">02</span><div>
+            <h3 class="en">Enrich</h3><h3 class="de">Anreichern</h3>
+            <div class="step-body"><div>
+              <p class="en">Website, company registers, news, tenders, financial outlook, decision makers and your own installed-base data – gathered and cited.</p>
+              <p class="de">Website, Handelsregister, Nachrichten, Ausschreibungen, Wirtschaftsprognose, Entscheider und Ihre eigenen Bestandsdaten – gesammelt und mit Quelle.</p>
+            </div></div>
+          </div></div>
+          <div class="panel"><div class="pcard gt">
+            <div class="pc-head mono"><span>02 — <span class="de">Anreichern</span><span class="en">Enrich</span></span><span class="de">Quelle + Konfidenz</span><span class="en">Source + confidence</span></div>
+            <div class="pbody">
+              <svg class="enr" viewBox="0 0 640 440" aria-hidden="true">
+                <path class="ln2" pathLength="1" style="--i:0" d="M194 53C250 53 250 120 250 180"/>
+                <path class="ln2" pathLength="1" style="--i:1" d="M446 53C390 53 390 120 390 180"/>
+                <path class="ln2" pathLength="1" style="--i:2" d="M194 220H210"/>
+                <path class="ln2" pathLength="1" style="--i:3" d="M446 220H430"/>
+                <path class="ln2" pathLength="1" style="--i:4" d="M194 387C250 387 250 320 250 260"/>
+                <path class="ln2" pathLength="1" style="--i:5" d="M446 387C390 387 390 320 390 260"/>
+                <g class="core"><rect x="210" y="180" width="220" height="80" rx="12"/><text x="320" y="215" text-anchor="middle" font-size="12.5" font-weight="600">Schramberg Antriebstechnik AG</text><text class="mn de" x="320" y="238" text-anchor="middle">KUNDENAKTE · 6 QUELLEN</text><text class="mn en" x="320" y="238" text-anchor="middle">ACCOUNT RECORD · 6 SOURCES</text></g>
+                <g class="src stag" style="--i:0"><rect x="8" y="30" width="186" height="46" rx="8"/><circle cx="28" cy="53" r="4" fill="#5AC8FA"/><text x="42" y="57.5" font-size="13" font-weight="600">Website</text><path class="ck" d="M166 53l4 4 8-9"/></g>
+                <g class="src stag" style="--i:1"><rect x="446" y="30" width="186" height="46" rx="8"/><circle cx="466" cy="53" r="4" fill="#5AC8FA"/><text class="de" x="480" y="57.5" font-size="13" font-weight="600">Handelsregister</text><text class="en" x="480" y="57.5" font-size="13" font-weight="600">Company register</text><path class="ck" d="M604 53l4 4 8-9"/></g>
+                <g class="src stag" style="--i:2"><rect x="8" y="197" width="186" height="46" rx="8"/><circle cx="28" cy="220" r="4" fill="#5AC8FA"/><text class="de" x="42" y="224.5" font-size="13" font-weight="600">Nachrichten</text><text class="en" x="42" y="224.5" font-size="13" font-weight="600">News</text><path class="ck" d="M166 220l4 4 8-9"/></g>
+                <g class="src stag" style="--i:3"><rect x="446" y="197" width="186" height="46" rx="8"/><circle cx="466" cy="220" r="4" fill="#5AC8FA"/><text class="de" x="480" y="224.5" font-size="13" font-weight="600">Ausschreibungen</text><text class="en" x="480" y="224.5" font-size="13" font-weight="600">Tenders</text><path class="ck" d="M604 220l4 4 8-9"/></g>
+                <g class="src stag" style="--i:4"><rect x="8" y="364" width="186" height="46" rx="8"/><circle cx="28" cy="387" r="4" fill="#5AC8FA"/><text class="de" x="42" y="391.5" font-size="13" font-weight="600">Entscheider</text><text class="en" x="42" y="391.5" font-size="13" font-weight="600">Decision makers</text><path class="ck" d="M166 387l4 4 8-9"/></g>
+                <g class="src stag" style="--i:5"><rect x="446" y="364" width="186" height="46" rx="8"/><circle cx="466" cy="387" r="4" fill="#30D158"/><text class="de" x="480" y="391.5" font-size="13" font-weight="600">Bestandsdaten</text><text class="en" x="480" y="391.5" font-size="13" font-weight="600">Installed base</text><path class="ck" d="M604 387l4 4 8-9"/></g>
+              </svg>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="flow-item" style="--r:4">
+          <div class="fstep"><span class="num mono">03</span><div>
+            <h3 class="en">Infer demand</h3><h3 class="de">Bedarf ableiten</h3>
+            <div class="step-body"><div>
+              <p class="en">Industry, products, vertical integration, headcount and shifts feed our proprietary inference model, whose weights are calibrated to your customer base – every factor stays visible.</p>
+              <p class="de">Branche, Produkte, Fertigungstiefe, Mitarbeiter und Schichten fließen in unser eigenentwickeltes Inferenzmodell, dessen Gewichte kundenspezifisch kalibriert werden – jeder Faktor bleibt sichtbar.</p>
+            </div></div>
+          </div></div>
+          <div class="panel"><div class="pcard gt">
+            <div class="pc-head mono"><span>03 — <span class="de">Bedarf ableiten</span><span class="en">Infer demand</span></span><span class="de">Inferenzmodell</span><span class="en">Inference model</span></div>
+            <div class="pbody">
+              <div class="facts mono">
+                <span class="stag" style="--i:0"><span class="de">Branche</span><span class="en">Industry</span></span>
+                <span class="stag" style="--i:1"><span class="de">Produkte</span><span class="en">Products</span></span>
+                <span class="stag" style="--i:2"><span class="de">Fertigungstiefe</span><span class="en">Vertical integration</span></span>
+                <span class="stag" style="--i:3"><span class="de">Mitarbeiter</span><span class="en">Headcount</span></span>
+                <span class="stag" style="--i:4"><span class="de">Schichten</span><span class="en">Shifts</span></span>
+              </div>
+              <ul class="dem">
+                <li style="--i:0;--w:.56"><span class="de">Mittlerer Bedarf</span><span class="en">Average demand</span><b><span data-flow data-to="7.2" data-dec="1">7,2</span><small>m³/min</small></b><i><u></u></i></li>
+                <li style="--i:1;--w:.73"><span class="de">Spitzenbedarf</span><span class="en">Peak demand</span><b><span data-flow data-to="9.4" data-dec="1">9,4</span><small>m³/min</small></b><i><u></u></i></li>
+                <li class="hi" style="--i:2;--w:1"><span class="de">Installationsbedarf</span><span class="en">Installation demand</span><b><span data-flow data-to="12.9" data-dec="1">12,9</span><small>m³/min</small></b><i><u></u></i></li>
+              </ul>
+              <div class="dem-foot mono"><span class="de">→ 30 Punkte im Prioritäts-Score</span><span class="en">→ 30 points in the priority score</span><span class="de">85 Tsd. € · 0,4 GWh/a</span><span class="en">€ 85k · 0.4 GWh/a</span></div>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="flow-item" style="--r:5">
+          <div class="fstep"><span class="num mono">04</span><div>
+            <h3 class="en">Prioritise &amp; act</h3><h3 class="de">Priorisieren &amp; handeln</h3>
+            <div class="step-body"><div>
+              <p class="en">A 0–100 score ranks every account. Live news, travel time from where you are and an AI briefing get you ready for the visit.</p>
+              <p class="de">Ein Score von 0–100 ordnet jeden Kunden ein. Live-Nachrichten, Fahrzeit vom aktuellen Standort und ein KI-Briefing bereiten den Besuch vor.</p>
+            </div></div>
+          </div></div>
+          <div class="panel"><div class="pcard gt">
+            <div class="pc-head mono"><span>04 — <span class="de">Priorisieren &amp; handeln</span><span class="en">Prioritise &amp; act</span></span><span class="de">Prioritätsliste</span><span class="en">Priority list</span></div>
+            <div class="pbody"><div class="rank">
+              <div class="rank-shot"><img src="app-priorisieren.jpg" width="1600" height="1000" loading="lazy" decoding="async" alt="Priority list with score, demand and travel time"></div>
+              <div class="rank-card">
+                <svg class="ring" viewBox="0 0 44 44" aria-hidden="true"><circle class="tr" cx="22" cy="22" r="18"/><circle class="pr" cx="22" cy="22" r="18" pathLength="1"/><text x="22" y="26.5" data-flow data-to="85">85</text></svg>
+                <div>Schramberg Antriebstechnik AG
+                  <div class="tags"><span class="a">A · <span class="de">diese Woche anrufen</span><span class="en">call this week</span></span><span>62 min</span><span class="de">KI-Briefing bereit</span><span class="en">AI briefing ready</span></div>
+                </div>
+              </div>
+            </div></div>
+          </div></div>
+        </div>
+      </div>
+      <div class="flow-prog" aria-hidden="true"><i></i></div>
     </div>
   </div>
 </section>
 
-
-<section class="sec" id="modell">
+<!-- ═════════ 05 Modell ═════════ -->
+<section class="sec sec-model cv" id="modell">
   <div class="wrap">
-    <div class="center">
-      <div class="kicker"><span class="en">Inside the model</span><span class="de">Blick ins Modell</span></div>
-      <h2 class="h2 en">From public features to demand – calibrated to you.</h2>
-      <h2 class="h2 de">Von öffentlichen Merkmalen zum Bedarf – auf Sie kalibriert.</h2>
-      <p class="intro en">Our proprietary inference model turns the features gathered during enrichment into average, peak and installation demand. Its weights are calibrated per customer on installed base, service history and verified sites – and every correction from the field flows back in.</p>
-      <p class="intro de">Unser eigenentwickeltes Inferenzmodell übersetzt die bei der Anreicherung gesammelten Merkmale in Mittel-, Spitzen- und Installationsbedarf. Seine Gewichte werden je Kunde auf Bestandsanlagen, Servicehistorie und verifizierten Standorten kalibriert – und jede Korrektur aus dem Feld fließt zurück.</p>
+    <div class="bar mono"><span><i></i><span class="de">Blick ins Modell</span><span class="en">Inside the model</span></span></div>
+    <div class="head2">
+      <h2 class="h2 rv en">From public features to demand – calibrated to you.</h2>
+      <h2 class="h2 rv de">Von öffentlichen Merkmalen zum Bedarf – auf Sie kalibriert.</h2>
+      <p class="intro rv en" style="--i:1">Our proprietary inference model turns the features gathered during enrichment into average, peak and installation demand. Its weights are calibrated per customer on installed base, service history and verified sites – and every correction from the field flows back in.</p>
+      <p class="intro rv de" style="--i:1">Unser eigenentwickeltes Inferenzmodell übersetzt die bei der Anreicherung gesammelten Merkmale in Mittel-, Spitzen- und Installationsbedarf. Seine Gewichte werden je Kunde auf Bestandsanlagen, Servicehistorie und verifizierten Standorten kalibriert – und jede Korrektur aus dem Feld fließt zurück.</p>
     </div>
+    <!-- Original-Grafik aus index.html (Zeilen 105–253), unverändert eingefügt -->
     <div style="margin-top:36px"><figure class="figure"><svg class="diagram" viewBox="0 0 1000 560" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="SAIL inference model" font-family="-apple-system,BlinkMacSystemFont,Inter,Helvetica Neue,Arial,sans-serif">
 <defs>
   <linearGradient id="gacc-1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5AC8FA"/><stop offset="1" stop-color="#0A84FF"/></linearGradient>
@@ -253,46 +455,56 @@
 </svg></figure></div>
   </div>
 </section>
-<section class="sec">
-  <div class="wrap split">
-    <div class="shot sm"><img src="app-kunde.jpg" alt="Account record with score breakdown and inferred demand" loading="lazy"></div>
-    <div class="txt">
-      <div class="kicker"><span class="en">Explainable by design</span><span class="de">Nachvollziehbar by design</span></div>
-      <h2 class="h2 en">Every score comes with its reasoning.</h2>
-      <h2 class="h2 de">Jeder Score kommt mit seiner Begründung.</h2>
-      <p class="intro en">SAIL never says “trust me”. The priority score is built from six weighted dimensions, and each one shows the facts behind it – so a sales rep can challenge, correct and learn.</p>
-      <p class="intro de">SAIL sagt nie „vertrau mir“. Der Score setzt sich aus sechs gewichteten Dimensionen zusammen, und jede zeigt die Fakten dahinter – damit Vertriebler hinterfragen, korrigieren und lernen können.</p>
-      <ul>
+
+<!-- ═════════ 06 Nachvollziehbar & aktuell ═════════ -->
+<section class="sec alt cv" id="einblick">
+  <div class="wrap">
+    <div class="split">
+      <div class="media rv-clip"><div class="shot"><img src="app-kunde.jpg" width="1600" height="1000" loading="lazy" decoding="async" alt="Account record with score breakdown and inferred demand"></div></div>
+      <div class="txt">
+        <span class="kick mono"><span class="en">Explainable by design</span><span class="de">Nachvollziehbar by design</span></span>
+        <h2 class="h2 rv en">Every score comes with its reasoning.</h2>
+        <h2 class="h2 rv de">Jeder Score kommt mit seiner Begründung.</h2>
+        <p class="intro rv en" style="--i:1">SAIL never says “trust me”. The priority score is built from six weighted dimensions, and each one shows the facts behind it – so a sales rep can challenge, correct and learn.</p>
+        <p class="intro rv de" style="--i:1">SAIL sagt nie „vertrau mir“. Der Score setzt sich aus sechs gewichteten Dimensionen zusammen, und jede zeigt die Fakten dahinter – damit Vertriebler hinterfragen, korrigieren und lernen können.</p>
+              <ul>
         <li><span class="en">Demand (30) · Buying signals (25) · Installed base (20)</span><span class="de">Bedarf (30) · Kaufsignale (25) · Bestandssituation (20)</span></li>
         <li><span class="en">Financial outlook (10) · Reachability (8) · Data quality (7)</span><span class="de">Wirtschaftlichkeit (10) · Erreichbarkeit (8) · Datenqualität (7)</span></li>
         <li><span class="en">Classes A / B / C with clear thresholds – A means “call this week”</span><span class="de">Klassen A / B / C mit klaren Schwellen – A heißt „diese Woche anrufen“</span></li>
         <li><span class="en">Model weights calibrated per customer – on your installed base and verified sites</span><span class="de">Modellgewichte je Kunde kalibriert – auf Ihren Bestandsanlagen und verifizierten Standorten</span></li>
       </ul>
+      </div>
+    </div>
+
+    <div class="split rev">
+      <div class="media rv-clip">
+        <div class="shot"><img src="app-nachrichten.jpg" width="1600" height="1000" loading="lazy" decoding="async" alt="Live news feed linked to accounts"></div>
+        <span class="tag" style="--i:0;left:-6%;top:14%" aria-hidden="true"><b>PJ</b><span class="de">Gewonnenes Projekt</span><span class="en">Project won</span></span>
+        <span class="tag" style="--i:1;left:-10%;top:30%" aria-hidden="true"><b>NB</b><span class="de">Neubau / Erweiterung</span><span class="en">New build / extension</span></span>
+        <span class="tag" style="--i:2;left:-4%;top:46%" aria-hidden="true"><b>SV</b><span class="de">Serviceintervall überfällig</span><span class="en">Service interval overdue</span></span>
+      </div>
+      <div class="txt">
+        <span class="kick mono"><span class="en">Always current</span><span class="de">Immer aktuell</span></span>
+        <h2 class="h2 rv en">News that becomes a sales signal – not noise.</h2>
+        <h2 class="h2 rv de">Nachrichten, die zum Verkaufssignal werden – statt Rauschen.</h2>
+        <p class="intro rv en" style="--i:1">Four SAIL agents work in the background – Scout, Verifier, Calibrator and Briefer – and watch press, registers and tender portals for every account in your territory. A new plant, a hired energy manager or a sustainability report lands as a notification, is linked to the account and can be taken over into the score with one click.</p>
+        <p class="intro rv de" style="--i:1">Vier SAIL-Agenten arbeiten im Hintergrund – Scout, Prüfer, Kalibrierer und Briefer – und beobachten Presse, Register und Ausschreibungsportale für jeden Kunden im Gebiet. Ein neues Werk, ein eingestellter Energiemanager oder ein Nachhaltigkeitsbericht kommt als Benachrichtigung, ist dem Kunden zugeordnet und wandert per Klick in den Score.</p>
+        <ul class="ticks">
+          <li class="rv"><span><span class="en">Notifications in the app – read, mark, act</span><span class="de">Benachrichtigungen in der App – lesen, markieren, handeln</span></span></li>
+          <li class="rv" style="--i:1"><span><span class="en">Each item visible in the account record with its source</span><span class="de">Jede Meldung in der Kundenakte, mit Quelle</span></span></li>
+          <li class="rv" style="--i:2"><span><span class="en">Economic outlook per company: growth, credit class, 3-year forecast</span><span class="de">Wirtschaftliche Prognose je Unternehmen: Wachstum, Bonität, 3-Jahres-Ausblick</span></span></li>
+          <li class="rv" style="--i:3"><span><span class="en">Agents propose, the sales rep confirms – <a href="product.html#agenten">how the agents work</a></span><span class="de">Agenten schlagen vor, der Vertriebler bestätigt – <a href="product.html#agenten">so arbeiten die Agenten</a></span></span></li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sec">
-  <div class="wrap split rev">
-    <div class="shot sm"><img src="app-nachrichten.jpg" alt="Live news feed linked to accounts" loading="lazy"></div>
-    <div class="txt">
-      <div class="kicker"><span class="en">Always current</span><span class="de">Immer aktuell</span></div>
-      <h2 class="h2 en">News that becomes a sales signal – not noise.</h2>
-      <h2 class="h2 de">Nachrichten, die zum Verkaufssignal werden – statt Rauschen.</h2>
-      <p class="intro en">Four SAIL agents work in the background – Scout, Verifier, Calibrator and Briefer – and watch press, registers and tender portals for every account in your territory. A new plant, a hired energy manager or a sustainability report lands as a notification, is linked to the account and can be taken over into the score with one click.</p>
-      <p class="intro de">Vier SAIL-Agenten arbeiten im Hintergrund – Scout, Prüfer, Kalibrierer und Briefer – und beobachten Presse, Register und Ausschreibungsportale für jeden Kunden im Gebiet. Ein neues Werk, ein eingestellter Energiemanager oder ein Nachhaltigkeitsbericht kommt als Benachrichtigung, ist dem Kunden zugeordnet und wandert per Klick in den Score.</p>
-      <ul>
-        <li><span class="en">Notifications in the app – read, mark, act</span><span class="de">Benachrichtigungen in der App – lesen, markieren, handeln</span></li>
-        <li><span class="en">Each item visible in the account record with its source</span><span class="de">Jede Meldung in der Kundenakte, mit Quelle</span></li>
-        <li><span class="en">Economic outlook per company: growth, credit class, 3-year forecast</span><span class="de">Wirtschaftliche Prognose je Unternehmen: Wachstum, Bonität, 3-Jahres-Ausblick</span></li>
-        <li><span class="en">Agents propose, the sales rep confirms – <a href="product.html#agenten">how the agents work</a></span><span class="de">Agenten schlagen vor, der Vertriebler bestätigt – <a href="product.html#agenten">so arbeiten die Agenten</a></span></li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<section class="sec">
-  <div class="wrap split">
+<!-- ═════════ 07 SAIL Go ═════════ -->
+<section class="sec sec-go cv" id="go">
+  <div class="wrap">
+    <div class="split">
+      <div class="go-stage" data-scroll>
     <div class="phone"><div class="island"></div><span class="sb">9:41</span><span class="sb2"><i></i></span><div class="screen gm">
   <div class="gm-top"><span class="gm-logo"><img src="logo.png" alt=""></span><span class="gm-loc">📍 Freiburg</span><span class="gm-bell"></span></div>
   <div class="gm-h"><b>Prioritäten</b><span>Deine besten Chancen · nach Score</span></div>
@@ -302,42 +514,83 @@
   <div class="gm-fab">+</div>
   <div class="gm-tabs"><span class="on"><i class="t1"></i>Prioritäten</span><span><i class="t2"></i>Kunden</span><span><i class="t3"></i>Pipeline</span><span><i class="t4"></i>News<b>3</b></span></div>
 </div><div class="home"></div></div>
-    <div class="txt">
-      <div class="kicker"><span class="en">SAIL Go</span><span class="de">SAIL Go</span></div>
-      <h2 class="h2 en">Desktop for planning. One tap for the road.</h2>
-      <h2 class="h2 de">Desktop zum Planen. Ein Tipp für unterwegs.</h2>
-      <p class="intro en">Switch to the Go mode and SAIL becomes a focused mobile app: today's priorities, the account at a glance, phone / e-mail / LinkedIn of the right contact, route in Google Maps. Same data, same workflow – one tap away.</p>
-      <p class="intro de">Mit dem Umschalter wird SAIL zur fokussierten mobilen App: die Prioritäten von heute, der Kunde auf einen Blick, Telefon / E-Mail / LinkedIn des richtigen Ansprechpartners, Route in Google Maps. Gleiche Daten, gleicher Workflow – einen Tipp entfernt.</p>
-      <ul>
-        <li><span class="en">Sort by score, demand or travel time; filter by postcode, city + radius, industry</span><span class="de">Sortieren nach Score, Bedarf oder Fahrzeit; Filter nach PLZ, Stadt + Radius, Branche</span></li>
-        <li><span class="en">Add a new company on site – the workflow runs in the background</span><span class="de">Neuen Betrieb vor Ort anlegen – der Workflow läuft im Hintergrund</span></li>
-        <li><span class="en">Suggestions from the territory you define</span><span class="de">Vorschläge aus dem Gebiet, das Sie festlegen</span></li>
-      </ul>
+      </div>
+      <div class="txt">
+        <span class="kick mono">SAIL Go</span>
+        <h2 class="h2 rv en">Desktop for planning. One tap for the road.</h2>
+        <h2 class="h2 rv de">Desktop zum Planen. Ein Tipp für unterwegs.</h2>
+        <p class="intro rv en" style="--i:1">Switch to the Go mode and SAIL becomes a focused mobile app: today's priorities, the account at a glance, phone / e-mail / LinkedIn of the right contact, route in Google Maps. Same data, same workflow – one tap away.</p>
+        <p class="intro rv de" style="--i:1">Mit dem Umschalter wird SAIL zur fokussierten mobilen App: die Prioritäten von heute, der Kunde auf einen Blick, Telefon / E-Mail / LinkedIn des richtigen Ansprechpartners, Route in Google Maps. Gleiche Daten, gleicher Workflow – einen Tipp entfernt.</p>
+        <ul class="ticks">
+          <li class="rv"><span><span class="en">Sort by score, demand or travel time; filter by postcode, city + radius, industry</span><span class="de">Sortieren nach Score, Bedarf oder Fahrzeit; Filter nach PLZ, Stadt + Radius, Branche</span></span></li>
+          <li class="rv" style="--i:1"><span><span class="en">Add a new company on site – the workflow runs in the background</span><span class="de">Neuen Betrieb vor Ort anlegen – der Workflow läuft im Hintergrund</span></span></li>
+          <li class="rv" style="--i:2"><span><span class="en">Suggestions from the territory you define</span><span class="de">Vorschläge aus dem Gebiet, das Sie festlegen</span></span></li>
+        </ul>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sec alt">
+<!-- ═════════ 08 Druckluft ═════════ -->
+<section class="sec alt cv" id="druckluft">
   <div class="wrap">
-    <div class="center">
-      <div class="kicker"><span class="en">Example: compressed air</span><span class="de">Beispiel: Druckluft</span></div>
-      <h2 class="h2 en">Built for capital goods with a demand you can model.</h2>
-      <h2 class="h2 de">Gebaut für Investitionsgüter mit modellierbarem Bedarf.</h2>
-      <p class="intro en">Our first deployment is compressed air. A plant's demand follows from its industry, production share, shifts and vertical integration – exactly the features SAIL extracts and feeds into its inference model. The same engine applies to pumps, drives, filtration, industrial gases or any product where demand scales with what a plant makes.</p>
-      <p class="intro de">Unser erster Einsatz ist Druckluft. Der Bedarf eines Werks folgt aus Branche, Produktionsanteil, Schichten und Fertigungstiefe – genau diese Merkmale extrahiert SAIL und gibt sie in sein Inferenzmodell. Dieselbe Engine passt für Pumpen, Antriebe, Filtration, Industriegase oder jedes Produkt, dessen Bedarf mit der Fertigung skaliert.</p>
+    <div class="bar mono"><span><i></i><span class="de">Beispiel: Druckluft</span><span class="en">Example: compressed air</span></span></div>
+    <div class="head2">
+      <h2 class="h2 rv en">Built for capital goods with a demand you can model.</h2>
+      <h2 class="h2 rv de">Gebaut für Investitionsgüter mit modellierbarem Bedarf.</h2>
+      <p class="intro rv en" style="--i:1">Our first deployment is compressed air. A plant's demand follows from its industry, production share, shifts and vertical integration – exactly the features SAIL extracts and feeds into its inference model. The same engine applies to pumps, drives, filtration, industrial gases or any product where demand scales with what a plant makes.</p>
+      <p class="intro rv de" style="--i:1">Unser erster Einsatz ist Druckluft. Der Bedarf eines Werks folgt aus Branche, Produktionsanteil, Schichten und Fertigungstiefe – genau diese Merkmale extrahiert SAIL und gibt sie in sein Inferenzmodell. Dieselbe Engine passt für Pumpen, Antriebe, Filtration, Industriegase oder jedes Produkt, dessen Bedarf mit der Fertigung skaliert.</p>
     </div>
-    <div class="grid g4" style="margin-top:40px">
-      <div class="card solid"><h4 class="en">Demand in m³/min</h4><h4 class="de">Bedarf in m³/min</h4><p class="en">Average, peak and installation demand per site, incl. leakage and reserve.</p><p class="de">Mittel-, Spitzen- und Installationsbedarf je Standort, inkl. Leckage und Reserve.</p></div>
-      <div class="card solid"><h4 class="en">Energy &amp; budget</h4><h4 class="de">Energie &amp; Budget</h4><p class="en">Power, annual energy cost and investment indication – a conversation starter in numbers.</p><p class="de">Leistung, jährliche Energiekosten und Invest-Indikation – ein Gesprächseinstieg in Zahlen.</p></div>
-      <div class="card solid"><h4 class="en">Installed base</h4><h4 class="de">Bestandssituation</h4><p class="en">Own customer, competitor fleet and its age – from your CRM or from signals.</p><p class="de">Eigener Kunde, Wettbewerbsanlage und deren Alter – aus Ihrem CRM oder aus Signalen.</p></div>
-      <div class="card solid"><h4 class="en">Product fit</h4><h4 class="de">Produktpassung</h4><p class="en">Optional: map the demand to your own product series for a first recommendation.</p><p class="de">Optional: Bedarf auf Ihre eigene Produktreihe abbilden – für eine erste Empfehlung.</p></div>
+    <div class="bento">
+      <div class="b-main rv">
+        <span class="mono">01</span>
+        <h3 class="en">Demand in m³/min</h3><h3 class="de">Bedarf in m³/min</h3>
+        <p class="en">Average, peak and installation demand per site, incl. leakage and reserve.</p>
+        <p class="de">Mittel-, Spitzen- und Installationsbedarf je Standort, inkl. Leckage und Reserve.</p>
+        <svg class="chart" data-in viewBox="0 0 640 330" aria-hidden="true">
+          <rect class="band" x="190" y="34" width="186.7" height="256"/>
+          <path class="ax" d="M50 290H610M190 34V290M376.7 34V290M563.3 34V290"/>
+          <text x="50" y="310" text-anchor="middle">00</text><text x="190" y="310" text-anchor="middle">06</text><text x="330" y="310" text-anchor="middle">12</text><text x="470" y="310" text-anchor="middle">18</text><text x="610" y="310" text-anchor="middle">24 h</text>
+          <path class="area" d="M50 189.2L96.7 196.4L143.3 192.8L190 167.6L213.3 138.8L236.7 128L260 142.4L283.3 120.8L306.7 135.2L330 165.8L353.3 140.6L376.7 153.2L400 131.6L423.3 126.2L446.7 146L470 156.8L493.3 142.4L516.7 162.2L540 171.2L563.3 182L586.7 185.6L610 189.2V290H50Z"/>
+          <path class="ref r-avg" pathLength="1" style="--i:0" d="M50 160.4H610"/>
+          <path class="ref r-peak" pathLength="1" style="--i:1" d="M50 120.8H610"/>
+          <path class="ref r-inst" pathLength="1" style="--i:2" d="M50 57.8H610"/>
+          <path class="curve" pathLength="1" d="M50 189.2L96.7 196.4L143.3 192.8L190 167.6L213.3 138.8L236.7 128L260 142.4L283.3 120.8L306.7 135.2L330 165.8L353.3 140.6L376.7 153.2L400 131.6L423.3 126.2L446.7 146L470 156.8L493.3 142.4L516.7 162.2L540 171.2L563.3 182L586.7 185.6L610 189.2"/>
+          <text class="lbl" style="--i:0" x="56" y="153"><tspan class="de">MITTEL 7,2</tspan><tspan class="en">AVERAGE 7.2</tspan></text>
+          <text class="lbl" style="--i:1" x="606" y="113" text-anchor="end"><tspan class="de">SPITZE 9,4</tspan><tspan class="en">PEAK 9.4</tspan></text>
+          <text class="lbl lbl-a" style="--i:2" x="606" y="50" text-anchor="end"><tspan class="de">INSTALLATION 12,9 M³/MIN</tspan><tspan class="en">INSTALLATION 12.9 M³/MIN</tspan></text>
+          <path class="ax lbl" style="--i:2" d="M72 64V114M67 64H77M67 114H77"/>
+          <text class="lbl" style="--i:2" x="84" y="93"><tspan class="de">RESERVE + LECKAGE</tspan><tspan class="en">RESERVE + LEAKAGE</tspan></text>
+        </svg>
+      </div>
+      <div class="b-s rv" style="--i:1">
+        <span class="mono">02</span>
+        <h3 class="en">Energy &amp; budget</h3><h3 class="de">Energie &amp; Budget</h3>
+        <p class="en">Power, annual energy cost and investment indication – a conversation starter in numbers.</p>
+        <p class="de">Leistung, jährliche Energiekosten und Invest-Indikation – ein Gesprächseinstieg in Zahlen.</p>
+        <div class="val"><span class="de">85 Tsd. € · 0,4 GWh/a</span><span class="en">€ 85k · 0.4 GWh/a</span></div>
+      </div>
+      <div class="b-s rv" style="--i:2">
+        <span class="mono">03</span>
+        <h3 class="en">Installed base</h3><h3 class="de">Bestandssituation</h3>
+        <p class="en">Own customer, competitor fleet and its age – from your CRM or from signals.</p>
+        <p class="de">Eigener Kunde, Wettbewerbsanlage und deren Alter – aus Ihrem CRM oder aus Signalen.</p>
+      </div>
+      <div class="b-s rv" style="--i:3">
+        <span class="mono">04</span>
+        <h3 class="en">Product fit</h3><h3 class="de">Produktpassung</h3>
+        <p class="en">Optional: map the demand to your own product series for a first recommendation.</p>
+        <p class="de">Optional: Bedarf auf Ihre eigene Produktreihe abbilden – für eine erste Empfehlung.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="sec">
+<!-- ═════════ Demo ═════════ -->
+<section class="sec sec-cta">
+  <div class="smoke" aria-hidden="true"><i></i><i></i></div>
   <div class="wrap">
-    <div class="callout">
+    <div class="callout rv">
       <div>
         <h2 class="h2 en">See SAIL on your own territory.</h2>
         <h2 class="h2 de">Sehen Sie SAIL auf Ihrem eigenen Gebiet.</h2>
@@ -351,7 +604,6 @@
     </div>
   </div>
 </section>
-
 </main>
 <footer>
   <div class="wrap">
@@ -386,6 +638,6 @@
     </div>
   </div>
 </footer>
-<script src="site.js?v=ae153f78"></script>
+<script src="site.js?v=20261003"></script>
 </body>
 </html>
