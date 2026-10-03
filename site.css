@@ -68,8 +68,8 @@ html[lang="en"] .de{display:none!important}
 /* sections */
 .figure{margin:0;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:var(--r2);padding:20px;backdrop-filter:blur(12px)}
 .figure .diagram{width:100%;height:auto;display:block}
-.figure .diagram-m{display:none}
-@media (max-width:760px){.figure .diagram{display:none}.figure .diagram-m{display:block}}
+.figure .diagram-m,.figure .diagram-ag-m{display:none}
+@media (max-width:760px){.figure .diagram{display:none}.figure .diagram-m,.figure .diagram-ag-m{display:block}}
 .article .figure .diagram{display:none}.article .figure .diagram-m{display:block;max-width:460px;margin:0 auto}
 .figure figcaption{margin-top:12px;font-size:13px;color:var(--muted2);text-align:center}
 @media (max-width:760px){.figure{padding:8px;border-radius:16px}}
