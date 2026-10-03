@@ -41,7 +41,7 @@
       <table>
         <thead><tr><th>Dimension</th><th>Weight</th><th>What it measures</th></tr></thead>
         <tbody>
-          <tr><td>Demand</td><td>30</td><td>Estimated installation demand relative to the territory</td></tr>
+          <tr><td>Demand</td><td>30</td><td>Installation demand inferred by the model, relative to the territory</td></tr>
           <tr><td>Buying signals</td><td>25</td><td>Recent, weighted events that precede a purchase</td></tr>
           <tr><td>Installed base</td><td>20</td><td>Competitor fleet, its age, your own installed base</td></tr>
           <tr><td>Financial outlook</td><td>10</td><td>Growth forecast and credit class</td></tr>
@@ -49,7 +49,7 @@
           <tr><td>Data quality</td><td>7</td><td>Number of sources and confidence of the facts</td></tr>
         </tbody>
       </table>
-      <p>The score is the sum, 0–100. Class A starts at 70 (“call this week”), B at 45 (“qualify”), C below (“observe”). The weights are defaults; a company selling pumps instead of compressors, or selling service rather than new equipment, changes them – and the whole territory re-ranks.</p>
+      <p>The score is the sum, 0–100. Class A starts at 70 (“call this week”), B at 45 (“qualify”), C below (“observe”). The weights are calibrated per customer: a company selling pumps instead of compressors, or service rather than new equipment, gets its own calibration – and the whole territory re-ranks.</p>
 
       <h2>Every point has a reason</h2>
       <p>Open any account and the score breakdown shows each dimension as a bar with its points and, underneath, the facts that produced them: “12.9 m³/min installation demand”, “won project, new building / extension”, “competitor fleet 2013 (13 years)”, “credit class A, revenue forecast +7.2 % p.a.”, “62 min drive from Freiburg, contact known”, “4 sources, confidence 90 %”. Each fact links to its source.</p>
@@ -59,7 +59,7 @@
       <p>Most tools hide uncertainty. We score it. A company with three contradictory sources and a guessed headcount gets fewer data-quality points – which pushes it down the list but keeps it visible, so a rep can decide whether a phone call would resolve the uncertainty. Low confidence is information, not noise.</p>
 
       <h2>What this changes in the field</h2>
-      <p>Three things we saw in pilots. First, adoption: reps start by checking the top three accounts against what they know, find the reasoning sound (or correct it), and then trust the rest of the list. Second, conversation quality: the breakdown becomes the opening of the visit – “we estimate around 20 m³/min, your fleet is from 2013, and you just announced a new hall”. Third, learning: when a visit shows an estimate was off, the correction stays, lowers the weight of the wrong source and improves the next enrichment.</p>
+      <p>Three things we saw in pilots. First, adoption: reps start by checking the top three accounts against what they know, find the reasoning sound (or correct it), and then trust the rest of the list. Second, conversation quality: the breakdown becomes the opening of the visit – “our model puts you at around 20 m³/min, your fleet is from 2013, and you just announced a new hall”. Third, learning: when a visit shows an inferred value was off, the correction stays, recalibrates the model weights for your customer base and improves the next enrichment.</p>
 
       <h2>The AI's place</h2>
       <p>Language models do the reading: websites, registers, news, tenders. They do not decide the score. The score is arithmetic on facts the model extracted and a human can see. That separation is what makes SAIL auditable – and what keeps the rep in charge.</p>
@@ -73,7 +73,7 @@
       <table>
         <thead><tr><th>Dimension</th><th>Gewicht</th><th>Was gemessen wird</th></tr></thead>
         <tbody>
-          <tr><td>Bedarf</td><td>30</td><td>Geschätzter Installationsbedarf relativ zum Gebiet</td></tr>
+          <tr><td>Bedarf</td><td>30</td><td>Vom Modell abgeleiteter Installationsbedarf relativ zum Gebiet</td></tr>
           <tr><td>Kaufsignale</td><td>25</td><td>Aktuelle, gewichtete Ereignisse, die einem Kauf vorausgehen</td></tr>
           <tr><td>Bestandssituation</td><td>20</td><td>Wettbewerbsanlage, deren Alter, eigener Bestand</td></tr>
           <tr><td>Wirtschaftlichkeit</td><td>10</td><td>Wachstumsprognose und Bonität</td></tr>
@@ -81,17 +81,17 @@
           <tr><td>Datenqualität</td><td>7</td><td>Anzahl der Quellen und Konfidenz der Fakten</td></tr>
         </tbody>
       </table>
-      <p>Der Score ist die Summe, 0–100. Klasse A beginnt bei 70 („diese Woche anrufen“), B bei 45 („qualifizieren“), C darunter („beobachten“). Die Gewichte sind Standardwerte; wer Pumpen statt Kompressoren oder Service statt Neuanlagen verkauft, ändert sie – und das ganze Gebiet wird neu sortiert.</p>
+      <p>Der Score ist die Summe, 0–100. Klasse A beginnt bei 70 („diese Woche anrufen“), B bei 45 („qualifizieren“), C darunter („beobachten“). Die Gewichte werden kundenspezifisch kalibriert: Wer Pumpen statt Kompressoren oder Service statt Neuanlagen verkauft, bekommt seine eigene Kalibrierung – und das ganze Gebiet wird neu sortiert.</p>
 
       <h2>Jeder Punkt hat einen Grund</h2>
       <p>Öffnet man einen Kunden, zeigt die Score-Herleitung jede Dimension als Balken mit Punkten und darunter die Fakten, aus denen sie entstanden: „12,9 m³/min Installationsbedarf“, „Gewonnenes Projekt, Neubau / Erweiterung“, „Wettbewerber 2013 (13 J.)“, „Bonität A, Umsatzprognose +7,2 % p. a.“, „62 min Anfahrt von Freiburg, Ansprechpartner bekannt“, „4 Quellen, Konfidenz 90 %“. Jeder Fakt verlinkt auf seine Quelle.</p>
       <div class="box"><p>Designregel: Wenn eine Zahl einem Kunden nicht in einem Satz erklärt werden kann, kommt sie nicht in den Score.</p></div>
 
       <h2>Warum Datenqualität eine Dimension ist, kein Filter</h2>
-      <p>Die meisten Tools verstecken Unsicherheit. Wir bewerten sie. Ein Unternehmen mit drei widersprüchlichen Quellen und geschätzter Mitarbeiterzahl bekommt weniger Datenqualitäts-Punkte – das schiebt es in der Liste nach unten, hält es aber sichtbar, damit ein Vertriebler entscheiden kann, ob ein Anruf die Unsicherheit auflöst. Geringe Konfidenz ist Information, kein Rauschen.</p>
+      <p>Die meisten Tools verstecken Unsicherheit. Wir bewerten sie. Ein Unternehmen mit drei widersprüchlichen Quellen und unsicherer Mitarbeiterzahl bekommt weniger Datenqualitäts-Punkte – das schiebt es in der Liste nach unten, hält es aber sichtbar, damit ein Vertriebler entscheiden kann, ob ein Anruf die Unsicherheit auflöst. Geringe Konfidenz ist Information, kein Rauschen.</p>
 
       <h2>Was sich im Feld ändert</h2>
-      <p>Drei Beobachtungen aus Piloten. Erstens Akzeptanz: Vertriebler prüfen zuerst die Top-3 gegen das, was sie wissen, finden die Herleitung plausibel (oder korrigieren sie) – und vertrauen dann dem Rest der Liste. Zweitens Gesprächsqualität: Die Herleitung wird zum Einstieg des Besuchs – „wir schätzen rund 20 m³/min, Ihre Anlage ist von 2013, und Sie haben gerade eine neue Halle angekündigt“. Drittens Lernen: Zeigt ein Besuch, dass eine Schätzung danebenlag, bleibt die Korrektur, senkt das Gewicht der falschen Quelle und verbessert die nächste Anreicherung.</p>
+      <p>Drei Beobachtungen aus Piloten. Erstens Akzeptanz: Vertriebler prüfen zuerst die Top-3 gegen das, was sie wissen, finden die Herleitung plausibel (oder korrigieren sie) – und vertrauen dann dem Rest der Liste. Zweitens Gesprächsqualität: Die Herleitung wird zum Einstieg des Besuchs – „unser Modell kommt auf rund 20 m³/min, Ihre Anlage ist von 2013, und Sie haben gerade eine neue Halle angekündigt“. Drittens Lernen: Zeigt ein Besuch, dass ein abgeleiteter Wert danebenlag, bleibt die Korrektur, kalibriert die Modellgewichte für Ihren Kundenstamm nach und verbessert die nächste Anreicherung.</p>
 
       <h2>Der Platz der KI</h2>
       <p>Sprachmodelle übernehmen das Lesen: Websites, Register, Nachrichten, Ausschreibungen. Sie entscheiden nicht über den Score. Der Score ist Arithmetik auf Fakten, die das Modell extrahiert hat und die ein Mensch sehen kann. Diese Trennung macht SAIL prüfbar – und lässt den Vertriebler am Steuer.</p>

@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title data-en="How SAIL infers compressed-air demand from public data – SAIL Blog" data-de="Wie SAIL Druckluftbedarf aus öffentlichen Daten ableitet – SAIL Blog">How SAIL infers compressed-air demand from public data – SAIL Blog</title>
+<meta name="description" data-en="Our proprietary inference model turns public features of a plant into average, peak and installation demand – and is calibrated per customer with its own weights." data-de="Unser eigenentwickeltes Inferenzmodell übersetzt öffentliche Merkmale eines Werks in Mittel-, Spitzen- und Installationsbedarf – kundenspezifisch mit eigenen Gewichten kalibriert." content="Our proprietary inference model turns public features of a plant into average, peak and installation demand – and is calibrated per customer with its own weights.">
+<link rel="icon" href="logo.png">
+<meta property="og:title" content="How SAIL infers compressed-air demand from public data – SAIL Blog">
+<meta property="og:description" content="Our proprietary inference model turns public features of a plant into average, peak and installation demand – and is calibrated per customer with its own weights.">
+<meta property="og:image" content="https://mysail.ai/app-dashboard.jpg">
+<meta property="og:url" content="https://mysail.ai/blog-demand-inference.html">
+<link rel="canonical" href="https://mysail.ai/blog-demand-inference.html">
+<link rel="stylesheet" href="site.css?v=88739ded">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="logo" href="index.html"><img src="logo-white.png" alt="SAIL – Sales Intelligence"></a>
+    <nav class="nav"><a href="index.html"><span class="en">Home</span><span class="de">Start</span></a><a href="product.html"><span class="en">Product</span><span class="de">Produkt</span></a><a href="pricing.html"><span class="en">Pricing</span><span class="de">Preise</span></a><a href="about.html"><span class="en">About</span><span class="de">Über uns</span></a><a href="blog.html"><span class="en">Blog</span><span class="de">Blog</span></a><a href="faq.html"><span class="en">FAQ</span><span class="de">FAQ</span></a></nav>
+    <div class="tools">
+      <span class="lang"><button data-lang="en">EN</button><button data-lang="de">DE</button></span>
+      <a class="btn p hide-m" href="contact.html" style="padding:9px 18px;font-size:14px"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a>
+      <button class="burger" aria-label="Menu">☰</button>
+    </div>
+  </div>
+  <div class="wrap mwrap"><nav class="mnav"><a href="index.html"><span class="en">Home</span><span class="de">Start</span></a><a href="product.html"><span class="en">Product</span><span class="de">Produkt</span></a><a href="pricing.html"><span class="en">Pricing</span><span class="de">Preise</span></a><a href="about.html"><span class="en">About</span><span class="de">Über uns</span></a><a href="blog.html"><span class="en">Blog</span><span class="de">Blog</span></a><a href="faq.html"><span class="en">FAQ</span><span class="de">FAQ</span></a><a href="contact.html"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a></nav></div>
+</header>
+<main>
+
+
+<section class="sec">
+  <div class="wrap article">
+    <div class="meta">2026-09-14 · <span class="en">7 min read · Methodology</span><span class="de">7 Min. Lesezeit · Methodik</span></div>
+
+    <div class="en">
+      <h1>How SAIL infers a plant's compressed-air demand from public data</h1>
+      <p>Compressed air is the fourth utility in manufacturing: almost every plant has it, and almost nobody outside the plant knows how much. For a sales engineer that is the central question – a foundry running 20 m³/min is a different conversation from a workshop running 2. SAIL answers it with a proprietary inference model that works from publicly available features, is calibrated to each customer's own market, and shows every factor it used.</p>
+
+      <h2>Features the model works from</h2>
+      <p>The enrichment step extracts the inputs; the inference model turns them into demand. The features that carry the most weight:</p>
+      <ul>
+        <li><b>Industry and process profile</b> – foundry, metal cutting, plastics, food, wood, glass/ceramics, automotive supply and so on, each with its own demand characteristics in the model.</li>
+        <li><b>Site headcount and production share</b> – from the website, register filings or company databases, per site rather than per group; the share of staff in production is inferred from industry and role mix.</li>
+        <li><b>Vertical integration</b> – a 1–5 scale derived from the process chain. A plant that casts, machines, coats and assembles needs far more air per head than one that only assembles bought-in parts.</li>
+        <li><b>Shift model and operating hours</b> – from job postings, press and site descriptions; it changes both the demand curve and the economics of efficiency investments.</li>
+        <li><b>Signals</b> – expansions, new lines, won projects and certifications shift the inferred demand forward in time.</li>
+      </ul>
+
+      <h2>What the model outputs</h2>
+      <ol>
+        <li><b>Average demand</b> in m³/min for the site.</li>
+        <li><b>Peak demand</b>, accounting for the simultaneity of consumers typical for the process profile.</li>
+        <li><b>Installation demand</b>, including leakage and reserve as learned for plants of that age and type.</li>
+        <li><b>Energy and budget</b> – power, annual energy cost under the inferred shift model, and an investment indication that opens the conversation in numbers.</li>
+      </ol>
+      <p>For a 300-person automotive supplier on two shifts with high vertical integration the model lands in the region of 25–30 m³/min installed, roughly 1 GWh of electricity a year and a six-figure project – a very different opener than “do you need a compressor?”.</p>
+
+      <h2>Calibrated per customer, not a generic average</h2>
+      <p>The model's weights are not fixed industry constants. During onboarding we calibrate them on the customer's own data: the installed base, service history and verified sites of the sales organisation using SAIL. A compressor manufacturer with a strong foundry footprint, a pump maker, or a dealer in a region with many small plants each get their own calibration – so the inferred demand reflects the market they actually sell into. Every correction a sales rep makes in the account record after a visit feeds back into that calibration and sharpens the model for the next enrichment.</p>
+      <div class="box"><p>In pilots, demand inferred after calibration ranked a territory correctly in the large majority of cases; where a site deviated, the cause was visible in the features (group instead of site headcount, unusual processes, an efficiency project already done) and fixed with one edit.</p></div>
+
+      <h2>Why show the factors?</h2>
+      <p>Because a rep who can say “based on your 300 employees in two shifts and your process chain, our model puts you at around 25 m³/min – does that sound right?” gets a conversation. A rep who says “our AI says you're a hot lead” gets a polite no. The model is proprietary; its reasoning is not hidden.</p>
+    </div>
+
+    <div class="de">
+      <h1>Wie SAIL den Druckluftbedarf eines Werks aus öffentlichen Daten ableitet</h1>
+      <p>Druckluft ist die vierte Betriebsenergie in der Fertigung: Fast jedes Werk hat sie, und fast niemand außerhalb des Werks weiß, wie viel. Für einen Vertriebsingenieur ist das die zentrale Frage – eine Gießerei mit 20 m³/min ist ein anderes Gespräch als eine Werkstatt mit 2. SAIL beantwortet sie mit einem eigenentwickelten Inferenzmodell, das aus öffentlich verfügbaren Merkmalen arbeitet, auf den Markt jedes Kunden kalibriert wird und jeden verwendeten Faktor zeigt.</p>
+
+      <h2>Merkmale, mit denen das Modell arbeitet</h2>
+      <p>Der Anreicherungsschritt extrahiert die Eingaben; das Inferenzmodell übersetzt sie in Bedarf. Die Merkmale mit dem größten Gewicht:</p>
+      <ul>
+        <li><b>Branche und Prozessprofil</b> – Gießerei, Zerspanung, Kunststoff, Lebensmittel, Holz, Glas/Keramik, Automobilzulieferung usw., jeweils mit eigener Bedarfscharakteristik im Modell.</li>
+        <li><b>Standortmitarbeiter und Produktionsanteil</b> – von Website, Registerveröffentlichungen oder Firmendatenbanken, je Standort statt je Konzern; der Produktionsanteil wird aus Branche und Rollenmix abgeleitet.</li>
+        <li><b>Fertigungstiefe</b> – eine Skala von 1–5, abgeleitet aus der Prozesskette. Ein Werk, das gießt, zerspant, beschichtet und montiert, braucht deutlich mehr Luft je Kopf als eines, das nur Zukaufteile montiert.</li>
+        <li><b>Schichtmodell und Betriebsstunden</b> – aus Stellenanzeigen, Presse und Standortbeschreibungen; sie verändern Bedarfskurve und Wirtschaftlichkeit von Effizienzinvestitionen.</li>
+        <li><b>Signale</b> – Erweiterungen, neue Linien, gewonnene Projekte und Zertifizierungen verschieben den abgeleiteten Bedarf zeitlich nach vorn.</li>
+      </ul>
+
+      <h2>Was das Modell ausgibt</h2>
+      <ol>
+        <li><b>Mittlerer Bedarf</b> in m³/min für den Standort.</li>
+        <li><b>Spitzenbedarf</b> unter Berücksichtigung der für das Prozessprofil typischen Gleichzeitigkeit der Verbraucher.</li>
+        <li><b>Installationsbedarf</b> inklusive Leckage und Reserve, wie sie für Anlagen dieses Alters und Typs gelernt wurden.</li>
+        <li><b>Energie und Budget</b> – Leistung, jährliche Energiekosten im abgeleiteten Schichtmodell und eine Invest-Indikation, die das Gespräch in Zahlen eröffnet.</li>
+      </ol>
+      <p>Für einen Automobilzulieferer mit 300 Mitarbeitern im Zweischichtbetrieb und hoher Fertigungstiefe landet das Modell bei grob 25–30 m³/min Installation, rund 1 GWh Strom pro Jahr und einem sechsstelligen Projekt – ein anderer Einstieg als „Brauchen Sie einen Kompressor?“.</p>
+
+      <h2>Kundenspezifisch kalibriert, kein generischer Durchschnitt</h2>
+      <p>Die Gewichte des Modells sind keine festen Branchenkonstanten. Beim Onboarding kalibrieren wir sie auf die eigenen Daten des Kunden: Bestandsanlagen, Servicehistorie und verifizierte Standorte der Vertriebsorganisation, die SAIL einsetzt. Ein Kompressorhersteller mit starkem Gießerei-Fußabdruck, ein Pumpenhersteller oder ein Händler in einer Region mit vielen kleinen Betrieben bekommen jeweils ihre eigene Kalibrierung – damit der abgeleitete Bedarf den Markt abbildet, in den sie tatsächlich verkaufen. Jede Korrektur, die ein Vertriebler nach einem Besuch in der Kundenakte vornimmt, fließt in diese Kalibrierung zurück und schärft das Modell für die nächste Anreicherung.</p>
+      <div class="box"><p>In Piloten hat der nach Kalibrierung abgeleitete Bedarf ein Gebiet in der großen Mehrheit der Fälle korrekt sortiert; wo ein Standort abwich, war die Ursache in den Merkmalen sichtbar (Konzern- statt Standortmitarbeiter, ungewöhnliche Prozesse, bereits umgesetztes Effizienzprojekt) und mit einer Änderung behoben.</p></div>
+
+      <h2>Warum die Faktoren zeigen?</h2>
+      <p>Weil ein Vertriebler, der sagen kann „Auf Basis Ihrer 300 Mitarbeiter im Zweischichtbetrieb und Ihrer Prozesskette kommt unser Modell auf rund 25 m³/min – passt das?“, ein Gespräch bekommt. Einer, der sagt „Unsere KI sagt, Sie sind ein heißer Lead“, bekommt ein höfliches Nein. Das Modell ist proprietär; seine Herleitung ist nicht versteckt.</p>
+    </div>
+
+    <p style="margin-top:36px"><a class="btn s" href="blog.html">← Blog</a> &nbsp; <a class="btn p" href="contact.html"><span class="en">Request a demo</span><span class="de">Demo anfragen</span></a></p>
+  </div>
+</section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <img src="logo-white.png" alt="SAIL">
+        <p class="en">AI-powered sales intelligence for industrial suppliers. Find the customers worth your time – before your competitors do.</p>
+        <p class="de">KI-gestützte Sales Intelligence für Industriezulieferer. Finden Sie die Kunden, die Ihre Zeit wert sind – bevor es der Wettbewerb tut.</p>
+      </div>
+      <div>
+        <h5 class="en">Product</h5><h5 class="de">Produkt</h5>
+        <a href="product.html"><span class="en">Features</span><span class="de">Funktionen</span></a>
+        <a href="product.html#workflow"><span class="en">How it works</span><span class="de">So funktioniert es</span></a>
+        <a href="pricing.html"><span class="en">Pricing</span><span class="de">Preise</span></a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div>
+        <h5 class="en">Company</h5><h5 class="de">Unternehmen</h5>
+        <a href="about.html"><span class="en">About us</span><span class="de">Über uns</span></a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html"><span class="en">Contact</span><span class="de">Kontakt</span></a>
+      </div>
+      <div>
+        <h5 class="en">Legal</h5><h5 class="de">Rechtliches</h5>
+        <a href="imprint.html"><span class="en">Imprint</span><span class="de">Impressum</span></a>
+        <a href="privacy.html"><span class="en">Privacy</span><span class="de">Datenschutz</span></a>
+      </div>
+    </div>
+    <div class="fbar">
+      <span>© 2026 SAIL · mysail.ai</span>
+      <span><span class="en">Made in Germany · Navigate Industrial Intelligence</span><span class="de">Made in Germany · Navigate Industrial Intelligence</span></span>
+    </div>
+  </div>
+</footer>
+<script src="site.js?v=88739ded"></script>
+</body>
+</html>

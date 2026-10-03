@@ -34,7 +34,7 @@
     <div class="kicker"><span class="en">Pricing</span><span class="de">Preise</span></div>
     <h1 class="en">Simple per-seat pricing. Pilots start small.</h1>
     <h1 class="de">Einfache Preise je Vertriebsplatz. Piloten starten klein.</h1>
-    <p class="intro en">All plans include the full workflow – capture, enrichment, demand estimation, scoring, news and the Go mode. Prices are indicative for the pilot phase and exclude VAT.</p>
+    <p class="intro en">All plans include the full workflow – capture, enrichment, demand inference, scoring, news and the Go mode. Prices are indicative for the pilot phase and exclude VAT.</p>
     <p class="intro de">Alle Pläne enthalten den vollständigen Workflow – Erfassen, Anreichern, Bedarf, Scoring, Nachrichten und den Go-Modus. Preise sind Richtwerte für die Pilotphase und verstehen sich zzgl. USt.</p>
   </div>
 </section>
@@ -51,7 +51,7 @@
           <li><span class="en">Up to 5 seats</span><span class="de">Bis zu 5 Plätze</span></li>
           <li><span class="en">500 enriched accounts per seat</span><span class="de">500 angereicherte Kunden je Platz</span></li>
           <li><span class="en">Territory search, Excel import/export</span><span class="de">Gebietssuche, Excel-Import/-Export</span></li>
-          <li><span class="en">Demand model &amp; explainable score</span><span class="de">Bedarfsmodell &amp; erklärbarer Score</span></li>
+          <li><span class="en">Inference model &amp; explainable score</span><span class="de">Inferenzmodell &amp; erklärbarer Score</span></li>
           <li><span class="en">News monitoring, Go mode</span><span class="de">Nachrichtenmonitoring, Go-Modus</span></li>
           <li><span class="en">E-mail support</span><span class="de">E-Mail-Support</span></li>
         </ul>
@@ -68,7 +68,7 @@
           <li><span class="en">Unlimited accounts</span><span class="de">Unbegrenzt viele Kunden</span></li>
           <li><span class="en">CRM sync (Salesforce, Dynamics, HubSpot, SAP CX)</span><span class="de">CRM-Sync (Salesforce, Dynamics, HubSpot, SAP CX)</span></li>
           <li><span class="en">Internal sources: installed base, service history</span><span class="de">Interne Quellen: Bestandsanlagen, Servicehistorie</span></li>
-          <li><span class="en">Custom score weights &amp; industry benchmarks</span><span class="de">Eigene Score-Gewichte &amp; Branchenkennwerte</span></li>
+          <li><span class="en">Customer-specific weight calibration</span><span class="de">Kundenspezifische Gewichtskalibrierung</span></li>
           <li><span class="en">Team dashboards, territory management</span><span class="de">Team-Dashboards, Gebietsverwaltung</span></li>
           <li><span class="en">Onboarding workshop, priority support</span><span class="de">Onboarding-Workshop, Priority-Support</span></li>
         </ul>
@@ -97,11 +97,11 @@
         <tr><td><span class="en">Seats</span><span class="de">Plätze</span></td><td>≤ 5</td><td class="en">unlimited</td><td class="de">unbegrenzt</td><td class="en">unlimited</td><td class="de">unbegrenzt</td></tr>
         <tr><td><span class="en">Enriched accounts</span><span class="de">Angereicherte Kunden</span></td><td>500 / <span class="en">seat</span><span class="de">Platz</span></td><td class="en">unlimited</td><td class="de">unbegrenzt</td><td class="en">unlimited</td><td class="de">unbegrenzt</td></tr>
         <tr><td><span class="en">Territory search, Excel</span><span class="de">Gebietssuche, Excel</span></td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
-        <tr><td><span class="en">Demand model &amp; score</span><span class="de">Bedarfsmodell &amp; Score</span></td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td><span class="en">Inference model &amp; score</span><span class="de">Inferenzmodell &amp; Score</span></td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
         <tr><td><span class="en">News monitoring &amp; Go mode</span><span class="de">Nachrichtenmonitoring &amp; Go-Modus</span></td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
         <tr><td>CRM Sync</td><td>–</td><td class="y">✓</td><td class="y">✓</td></tr>
         <tr><td><span class="en">Internal data sources</span><span class="de">Interne Datenquellen</span></td><td>–</td><td class="y">✓</td><td class="y">✓</td></tr>
-        <tr><td><span class="en">Custom weights &amp; benchmarks</span><span class="de">Eigene Gewichte &amp; Kennwerte</span></td><td>–</td><td class="y">✓</td><td class="y">✓</td></tr>
+        <tr><td><span class="en">Weight calibration per customer</span><span class="de">Gewichtskalibrierung je Kunde</span></td><td>–</td><td class="y">✓</td><td class="y">✓</td></tr>
         <tr><td><span class="en">Product recommendation</span><span class="de">Produktempfehlung</span></td><td>–</td><td>–</td><td class="y">✓</td></tr>
         <tr><td>SSO, Audit-Log, API</td><td>–</td><td>–</td><td class="y">✓</td></tr>
         <tr><td>Support</td><td>E-Mail</td><td>Priority</td><td>CSM + SLA</td></tr>
@@ -116,7 +116,7 @@
     <h2 class="h2 de">Fragen zu den Preisen</h2>
     <div class="faq" style="margin-top:20px">
       <details><summary><span class="en">What is a “seat”?</span><span class="de">Was ist ein „Platz“?</span></summary><p class="en">A named sales user with full access to the desktop workspace and the Go mode. Read-only viewers (sales management, marketing) are free in Team and Enterprise.</p><p class="de">Ein namentlicher Vertriebsnutzer mit vollem Zugriff auf Desktop-Arbeitsplatz und Go-Modus. Lesende Nutzer (Vertriebsleitung, Marketing) sind in Team und Enterprise kostenlos.</p></details>
-      <details><summary><span class="en">How does the pilot work?</span><span class="de">Wie läuft der Pilot ab?</span></summary><p class="en">Three months, one territory, up to five seats, Starter pricing. We set up the industry benchmarks for your product together, import your lists and review the results with your team after four and twelve weeks.</p><p class="de">Drei Monate, ein Gebiet, bis zu fünf Plätze, Starter-Preis. Wir richten die Branchenkennwerte für Ihr Produkt gemeinsam ein, importieren Ihre Listen und besprechen die Ergebnisse nach vier und zwölf Wochen mit Ihrem Team.</p></details>
+      <details><summary><span class="en">How does the pilot work?</span><span class="de">Wie läuft der Pilot ab?</span></summary><p class="en">Three months, one territory, up to five seats, Starter pricing. We calibrate the inference model for your product together, import your lists and review the results with your team after four and twelve weeks.</p><p class="de">Drei Monate, ein Gebiet, bis zu fünf Plätze, Starter-Preis. Wir kalibrieren das Inferenzmodell für Ihr Produkt gemeinsam, importieren Ihre Listen und besprechen die Ergebnisse nach vier und zwölf Wochen mit Ihrem Team.</p></details>
       <details><summary><span class="en">Are AI costs included?</span><span class="de">Sind KI-Kosten enthalten?</span></summary><p class="en">Yes. Enrichment, briefings and “ask SAIL” are included in the seat price with a fair-use limit that no field sales team has hit so far.</p><p class="de">Ja. Anreicherung, Briefings und „SAIL fragen“ sind im Platzpreis enthalten – mit einer Fair-Use-Grenze, die bisher kein Außendienstteam erreicht hat.</p></details>
       <details><summary><span class="en">Can we pay annually?</span><span class="de">Können wir jährlich zahlen?</span></summary><p class="en">Yes – annual payment gets two months free. Enterprise contracts are typically 24 or 36 months.</p><p class="de">Ja – bei jährlicher Zahlung sind zwei Monate frei. Enterprise-Verträge laufen typischerweise 24 oder 36 Monate.</p></details>
     </div>
