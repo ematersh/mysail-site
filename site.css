@@ -665,3 +665,11 @@ footer::after{content:"Navigate Industrial Intelligence";display:block;white-spa
 @media(prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;animation-delay:0s!important;animation-iteration-count:1!important;transition-duration:.01ms!important;transition-delay:0s!important;scroll-behavior:auto!important}
 }
+
+/* ───────── Ohne Rasterlinien (04.10.2026) ─────────
+   Blendet die durchgehenden Rasterlinien aus (Seitenränder, Abschnitts-
+   trenner, Label-Zeilen, Footer). Karten-, Tabellen- und FAQ-Rahmen bleiben.
+   RÜCKGÄNGIG: diesen Block löschen (oder den zugehörigen Commit reverten). */
+.wrap{border-inline:0}
+.sec,footer,.fbar,footer::after{border-top:0}
+.bar{border-bottom:0}
