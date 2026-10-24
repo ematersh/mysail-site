@@ -221,3 +221,27 @@
     $$('.figure').forEach(f=>fio.observe(f));
   }
 })();
+
+/* ── Cookie-Hinweis: Website setzt keine Cookies, Hinweis nur informativ; Bestätigung bleibt im Browser (localStorage "sail.notice") ── */
+(()=>{
+  const KEY='sail.notice';
+  try{if(localStorage.getItem(KEY)==='1')return}catch(e){}
+  const d=document,el=d.createElement('aside');
+  el.className='cnotice';
+  el.setAttribute('role','region');
+  el.setAttribute('aria-label','Cookie notice');
+  el.innerHTML=
+    '<p class="cn-t"><span class="en">Cookies</span><span class="de">Cookies</span></p>'+
+    '<p class="en">This website sets no cookies and uses no tracking. Only your language choice is stored in your browser (technically necessary). <a href="privacy.html">Privacy policy</a></p>'+
+    '<p class="de">Diese Website setzt keine Cookies und nutzt kein Tracking. Nur Ihre Sprachwahl wird in Ihrem Browser gespeichert (technisch notwendig). <a href="privacy.html">Datenschutzerklärung</a></p>'+
+    '<div class="cn-row"><button type="button" class="btn p cn-ok"><span class="en">Accept</span><span class="de">Akzeptieren</span></button></div>';
+  d.body.appendChild(el);
+  requestAnimationFrame(()=>requestAnimationFrame(()=>el.classList.add('show')));
+  const close=()=>{
+    try{localStorage.setItem(KEY,'1')}catch(e){}
+    el.classList.remove('show');
+    el.addEventListener('transitionend',()=>el.remove(),{once:true});
+    setTimeout(()=>el.remove(),600);
+  };
+  el.querySelector('.cn-ok').addEventListener('click',close);
+})();

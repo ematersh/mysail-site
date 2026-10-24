@@ -673,3 +673,23 @@ footer::after{content:"Navigate Industrial Intelligence";display:block;white-spa
 .wrap{border-inline:0}
 .sec,footer,.fbar,footer::after{border-top:0}
 .bar{border-bottom:0}
+
+/* ───────── Cookie-Hinweis (24.10.2026) ─────────
+   Die Website setzt keine Cookies; der Hinweis informiert nur (kein Consent nötig).
+   Desktop: Karte unten links · Mobil (≤560px): volle Breite am unteren Rand.
+   Wird per site.js eingefügt; die Bestätigung merkt sich localStorage "sail.notice". */
+.cnotice{position:fixed;z-index:70;left:16px;bottom:16px;width:min(100% - 32px,440px);padding:18px 20px;border-radius:var(--r-frame);background:rgba(6,12,28,.86);-webkit-backdrop-filter:blur(18px) saturate(1.5);backdrop-filter:blur(18px) saturate(1.5);border:1px solid rgba(255,255,255,.12);box-shadow:0 24px 60px -24px rgba(0,0,0,.8);color:var(--fg);font-family:var(--font);
+  opacity:0;translate:0 16px;transition:opacity .45s var(--ease),translate .45s var(--ease)}
+.cnotice.show{opacity:1;translate:0 0}
+.cnotice .cn-t{margin:0 0 6px;font:500 11px/1 var(--mono);letter-spacing:.09em;text-transform:uppercase;color:var(--acc)}
+.cnotice p{margin:0;font-size:14px;line-height:1.55;color:var(--fg2)}
+.cnotice p a{color:var(--fg);text-decoration:underline;text-underline-offset:3px}
+.cnotice .cn-row{display:flex;align-items:center;justify-content:flex-end;gap:12px;margin-top:14px;flex-wrap:wrap}
+.cnotice .btn{min-height:42px;padding:0 18px}
+.cnotice .btn.p::after{display:none}
+@media(max-width:560px){
+  .cnotice{left:0;right:0;bottom:0;width:100%;background:rgba(6,12,28,.95);border-radius:var(--r-frame) var(--r-frame) 0 0;border-bottom:0;padding:18px 20px calc(18px + env(safe-area-inset-bottom))}
+  .cnotice .cn-row{flex-direction:column;align-items:stretch}
+  .cnotice .btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){.cnotice{transition:none}}
